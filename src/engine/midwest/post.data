@@ -1,0 +1,139 @@
+http://www.midwestairlines.com/
+
+GET / HTTP/1.1
+Host: www.midwestairlines.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; rv:1.7.3) Gecko/20040913 Firefox/0.10
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+
+HTTP/1.x 302 Object moved
+Date: Sun, 10 Oct 2004 18:38:58 GMT
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+Location: /MAWeb/
+Content-Length: 128
+Content-Type: text/html
+Set-Cookie: ASPSESSIONIDASCBDRTT=LABCBJKADJKGNCAICAHGOIHL; path=/
+Cache-Control: private
+----------------------------------------------------------
+http://www.midwestairlines.com/MAWeb/
+
+GET /MAWeb/ HTTP/1.1
+Host: www.midwestairlines.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; rv:1.7.3) Gecko/20040913 Firefox/0.10
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: ASPSESSIONIDASCBDRTT=LABCBJKADJKGNCAICAHGOIHL
+
+HTTP/1.x 302 Found
+Date: Sun, 10 Oct 2004 18:38:59 GMT
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+X-AspNet-Version: 1.1.4322
+Location: /MAWeb/(jcxqpneig0ltz0ih4nmxamr4)/Default.aspx
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+Content-Length: 163
+----------------------------------------------------------
+http://www.midwestairlines.com/MAWeb/(jcxqpneig0ltz0ih4nmxamr4)/Default.aspx
+
+GET /MAWeb/(jcxqpneig0ltz0ih4nmxamr4)/Default.aspx HTTP/1.1
+Host: www.midwestairlines.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; rv:1.7.3) Gecko/20040913 Firefox/0.10
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: ASPSESSIONIDASCBDRTT=LABCBJKADJKGNCAICAHGOIHL
+
+HTTP/1.x 200 OK
+Date: Sun, 10 Oct 2004 18:38:59 GMT
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+X-AspNet-Version: 1.1.4322
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+Content-Length: 36487
+----------------------------------------------------------
+http://www.midwestairlines.com/MAWeb/(jcxqpneig0ltz0ih4nmxamr4)/Default.aspx
+
+POST /MAWeb/(jcxqpneig0ltz0ih4nmxamr4)/Default.aspx HTTP/1.1
+Host: www.midwestairlines.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; rv:1.7.3) Gecko/20040913 Firefox/0.10
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://www.midwestairlines.com/MAWeb/(jcxqpneig0ltz0ih4nmxamr4)/Default.aspx
+Cookie: ASPSESSIONIDASCBDRTT=LABCBJKADJKGNCAICAHGOIHL
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 3230
+__EVENTTARGET=_leftSignIn%3A_signInButton&__EVENTARGUMENT=&__VIEWSTATE=dDwtMTE1NDQ1MTU0Nzt0PDtsPGk8MT47PjtsPHQ8O2w8aTw1PjtpPDc%2BO2k8OT47PjtsPHQ8O2w8aTwzPjtpPDU%2BOz47bDx0PHA8bDxWaXNpYmxlOz47bDxvPGY%2BOz4%2BOzs%2BO3Q8O2w8aTwxPjtpPDM%2BOz47bDx0PDtsPGk8MT47aTwzPjs%2BO2w8dDxwPHA8bDxFbmFibGVkOz47bDxvPGY%2BOz4%2BOz47Oz47dDxAMDxcZTs%2BOzs%2BOz4%2BO3Q8O2w8aTwxPjtpPDU%2BO2k8Nz47PjtsPHQ8cDxwPGw8RW5hYmxlZDs%2BO2w8bzxmPjs%2BPjs%2BOzs%2BO3Q8cDxwPGw8RW5hYmxlZDs%2BO2w8bzxmPjs%2BPjs%2BOzs%2BO3Q8cDxwPGw8RW5hYmxlZDs%2BO2w8bzxmPjs%2BPjs%2BOzs%2BOz4%2BOz4%2BOz4%2BO3Q8cDxwPGw8Q3VycmVudFNlY3Rpb247PjtsPE1BV2ViLlVzZXJDb250cm9scy5FeHByZXNzQm9va2luZytTZWN0aW9uLCBNQVdlYiwgVmVyc2lvbj0xLjAuMTc0MC4yNTA1NiwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0zMjJiN2RjZDQ5MjFjNTU2PEFpcj47Pj47PjtsPGk8Mz47aTw1PjtpPDc%2BOz47bDx0PHA8bDxWaXNpYmxlOz47bDxvPHQ%2BOz4%2BO2w8aTw5PjtpPDEyPjtpPDE3PjtpPDE5PjtpPDIxPjtpPDIzPjtpPDI3PjtpPDI5Pjs%2BO2w8dDx0PDs7bDxpPDA%2BOz4%2BOzs%2BO3Q8cDxwPGw8RW5hYmxlZDs%2BO2w8bzxmPjs%2BPjs%2BOzs%2BO3Q8O2w8aTwxPjtpPDM%2BOz47bDx0PEAwPGk8OT47Pjs7Pjt0PEAwPGk8OT47Pjs7Pjs%2BPjt0PDtsPGk8MT47aTwzPjs%2BO2w8dDxAMDxpPDk%2BOz47Oz47dDxAMDxpPDExPjs%2BOzs%2BOz4%2BO3Q8cDxwPGw8RW5hYmxlZDs%2BO2w8bzxmPjs%2BPjs%2BOzs%2BO3Q8QDA8aTwwPjs%2BOzs%2BO3Q8dDw7O2w8aTwwPjs%2BPjs7Pjt0PEAwPFxlOz47Oz47Pj47dDxwPGw8VmlzaWJsZTs%2BO2w8bzxmPjs%2BPjtsPGk8Nz47aTw5PjtpPDExPjtpPDEzPjtpPDE1Pjs%2BO2w8dDw7bDxpPDE%2BO2k8Mz47PjtsPHQ8QDA8aTw5Pjs%2BOzs%2BO3Q8QDA8aTw5Pjs%2BOzs%2BOz4%2BO3Q8QDA8aTwxMD47Pjs7Pjt0PDtsPGk8MT47aTwzPjs%2BO2w8dDxAMDxpPDk%2BOz47Oz47dDxAMDxpPDk%2BOz47Oz47Pj47dDxAMDxpPDA%2BOz47Oz47dDxAMDxpPDA%2BOz47Oz47Pj47dDxwPGw8VmlzaWJsZTs%2BO2w8bzxmPjs%2BPjtsPGk8Nz47aTw5PjtpPDExPjtpPDEzPjtpPDE1Pjs%2BO2w8dDw7bDxpPDE%2BO2k8Mz47PjtsPHQ8QDA8aTw5Pjs%2BOzs%2BO3Q8QDA8aTw5Pjs%2BOzs%2BOz4%2BO3Q8O2w8aTwxPjtpPDM%2BOz47bDx0PEAwPGk8OT47Pjs7Pjt0PEAwPGk8OT47Pjs7Pjs%2BPjt0PEAwPGk8MD47Pjs7Pjt0PEAwPGk8MT47Pjs7Pjt0PEAwPGk8MD47Pjs7Pjs%2BPjs%2BPjt0PDtsPGk8MT47aTwxMz47aTwxND47aTwxNj47aTwyMD47PjtsPHQ8cDxwPGw8RW5hYmxlZDs%2BO2w8bzxmPjs%2BPjs%2BOzs%2BO3Q8QDA8XGU7Pjs7Pjt0PHA8cDxsPEVuYWJsZWQ7PjtsPG88Zj47Pj47Pjs7Pjt0PHQ8cDxwPGw8RGF0YVRleHRGaWVsZDtEYXRhVmFsdWVGaWVsZDs%2BO2w8VVNTaG9ydERhdGU7RXVyb3BlYW5TaG9ydERhdGU7Pj47Pjt0PGk8NT47QDwxMC85LzIwMDQ7MTAvMTAvMjAwNDsxMC8xMS8yMDA0OzEwLzEyLzIwMDQ7MTAvMTMvMjAwNDs%2BO0A8MDkvMTAvMjAwNDsxMC8xMC8yMDA0OzExLzEwLzIwMDQ7MTIvMTAvMjAwNDsxMy8xMC8yMDA0Oz4%2BOz47Oz47dDxAMDxcZTs%2BOzs%2BOz4%2BOz4%2BOz4%2BO2w8X2dsb2JhbE5hdmlnYXRpb246X2hlYWRlclNpZ25JbjtfbGVmdFNpZ25Jbjpfc2lnbkluQnV0dG9uO19jb250YWludGVyOl9haXJDYXJUYWI7X2NvbnRhaW50ZXI6X2FpckhvdGVsVGFiO19jb250YWludGVyOl9kZXBhcnREYXRlOl9jYWxCdXR0b247X2NvbnRhaW50ZXI6X3JldHVybkRhdGU6X2NhbEJ1dHRvbjtfY29udGFpbnRlcjpfYWlyU2VhcmNoO19yaWdodENvbHVtbjpfZmxpZ2h0U3RhdHVzQnV0dG9uO19yaWdodENvbHVtbjpfc2l0ZVNlYXJjaDs%2BPqD3YIEhM8WWfs2lTwknsRLuTSrM&_leftSignIn%3A_userName=veresch&_leftSignIn%3A_password=banana&_containter%3A_tripType=R&_containter%3A_fromCity=&_containter%3A_toCity=&_containter%3A_departDate%3A_month=10&_containter%3A_departDate%3A_day=10&_containter%3A_returnDate%3A_month=10&_containter%3A_returnDate%3A_day=12&_containter%3A_numPassengers=1&_containter%3A_searchBy=PRICE&_containter%3A_airPromo=&_rightColumn%3A_flightNumber=&_rightColumn%3A_flightdate=10%2F10%2F2004&_rightColumn%3Ap_search_text=
+HTTP/1.x 302 Found
+Date: Sun, 10 Oct 2004 18:39:40 GMT
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+X-AspNet-Version: 1.1.4322
+Location: /MAWeb/(jcxqpneig0ltz0ih4nmxamr4)/default.aspx
+Set-Cookie: member_login=52560DA1A4DF094340D6EA4314050DDBC6A417723546E4A399DD42C1DFFDB8D10E21C7444E7AEB9407DF4784F941447AB9E748C04CD086CCD361FC55A10DE6D42643DF0542B6FA22D478280C2BB054223231A13564F07410EF19C5C3FE6FCBF0B881430AD12002EC8422BF3D6DD1D911544517D128D1CBDBF7B8A053DE4E910DDD7D35F307832B61BD937A003A3B087CF447AD9C62EF32FFA72D38F72F5F33EDF8746307B34D22BD795AB15E8266A610; path=/
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+Content-Length: 163
+----------------------------------------------------------
+http://www.midwestairlines.com/MAWeb/(jcxqpneig0ltz0ih4nmxamr4)/default.aspx
+
+GET /MAWeb/(jcxqpneig0ltz0ih4nmxamr4)/default.aspx HTTP/1.1
+Host: www.midwestairlines.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; rv:1.7.3) Gecko/20040913 Firefox/0.10
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://www.midwestairlines.com/MAWeb/(jcxqpneig0ltz0ih4nmxamr4)/Default.aspx
+Cookie: ASPSESSIONIDASCBDRTT=LABCBJKADJKGNCAICAHGOIHL; member_login=52560DA1A4DF094340D6EA4314050DDBC6A417723546E4A399DD42C1DFFDB8D10E21C7444E7AEB9407DF4784F941447AB9E748C04CD086CCD361FC55A10DE6D42643DF0542B6FA22D478280C2BB054223231A13564F07410EF19C5C3FE6FCBF0B881430AD12002EC8422BF3D6DD1D911544517D128D1CBDBF7B8A053DE4E910DDD7D35F307832B61BD937A003A3B087CF447AD9C62EF32FFA72D38F72F5F33EDF8746307B34D22BD795AB15E8266A610
+
+HTTP/1.x 200 OK
+Date: Sun, 10 Oct 2004 18:39:41 GMT
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+X-AspNet-Version: 1.1.4322
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+Content-Length: 35191
+----------------------------------------------------------
+http://www.midwestairlines.com/MAWeb/(jcxqpneig0ltz0ih4nmxamr4)/travelplanner/deals/deals.aspx
+
+GET /MAWeb/(jcxqpneig0ltz0ih4nmxamr4)/travelplanner/deals/deals.aspx HTTP/1.1
+Host: www.midwestairlines.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; rv:1.7.3) Gecko/20040913 Firefox/0.10
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://www.midwestairlines.com/MAWeb/(jcxqpneig0ltz0ih4nmxamr4)/default.aspx
+Cookie: ASPSESSIONIDASCBDRTT=LABCBJKADJKGNCAICAHGOIHL; member_login=52560DA1A4DF094340D6EA4314050DDBC6A417723546E4A399DD42C1DFFDB8D10E21C7444E7AEB9407DF4784F941447AB9E748C04CD086CCD361FC55A10DE6D42643DF0542B6FA22D478280C2BB054223231A13564F07410EF19C5C3FE6FCBF0B881430AD12002EC8422BF3D6DD1D911544517D128D1CBDBF7B8A053DE4E910DDD7D35F307832B61BD937A003A3B087CF447AD9C62EF32FFA72D38F72F5F33EDF8746307B34D22BD795AB15E8266A610
+
+HTTP/1.x 200 OK
+Date: Sun, 10 Oct 2004 18:40:18 GMT
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+X-AspNet-Version: 1.1.4322
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+Content-Length: 22946

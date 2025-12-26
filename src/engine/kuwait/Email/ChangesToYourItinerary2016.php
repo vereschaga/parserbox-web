@@ -1,0 +1,284 @@
+<?php
+
+namespace AwardWallet\Engine\kuwait\Email;
+
+use AwardWallet\Engine\MonthTranslate;
+
+class ChangesToYourItinerary2016 extends \TAccountChecker
+{
+    public $mailFiles = "kuwait/it-6526568.eml";
+    public $reFrom = "@kuwaitairways.com";
+    public $reSubject = [
+        "en"=> "Changes to your Kuwait Airways Itinerary",
+    ];
+    public $reBody = 'Kuwait Airways';
+    public $reBody2 = [
+        "en"=> "Booking Summary",
+    ];
+
+    public static $dictionary = [
+        "en" => [],
+    ];
+
+    public $lang = "en";
+
+    public function parseHtml(&$itineraries)
+    {
+        $it = [];
+
+        $it['Kind'] = "T";
+
+        // RecordLocator
+        $it['RecordLocator'] = $this->nextText("Booking Reference");
+
+        // TripNumber
+        // Passengers
+        // TicketNumbers
+        // AccountNumbers
+        // Cancelled
+        // TotalCharge
+        // BaseFare
+        // Currency
+        // Tax
+        // SpentAwards
+        // EarnedAwards
+        // Status
+        // ReservationDate
+        // NoItineraries
+        // TripCategory
+
+        $xpath = "//text()[" . $this->eq("Departure") . "]/ancestor::tr[1]/following-sibling::tr";
+        $nodes = $this->http->XPath->query($xpath);
+
+        if ($nodes->length == 0) {
+            $this->http->Log("segments root not found: $xpath", LOG_LEVEL_NORMAL);
+        }
+
+        foreach ($nodes as $root) {
+            $itsegment = [];
+            // FlightNumber
+            $itsegment['FlightNumber'] = $this->http->FindSingleNode(".//td[1]", $root, true, "#^\w{2}(\d+)$#");
+
+            // DepCode
+            $itsegment['DepCode'] = $this->http->FindSingleNode("./td[2]/descendant::text()[normalize-space(.)][1]", $root, true, "#\(\s*([A-Z]{3})\s*\)#");
+
+            // DepName
+            $itsegment['DepName'] = $this->http->FindSingleNode("./td[2]/descendant::text()[normalize-space(.)][1]", $root, true, "#(.*?)\s+\(#");
+
+            // DepartureTerminal
+            // DepDate
+            $itsegment['DepDate'] = strtotime($this->normalizeDate($this->http->FindSingleNode("./td[2]/descendant::text()[normalize-space(.)][2]", $root)));
+
+            // ArrCode
+            $itsegment['ArrCode'] = $this->http->FindSingleNode("./td[3]/descendant::text()[normalize-space(.)][1]", $root, true, "#\(\s*([A-Z]{3})\s*\)#");
+
+            // ArrName
+            $itsegment['ArrName'] = $this->http->FindSingleNode("./td[3]/descendant::text()[normalize-space(.)][1]", $root, true, "#(.*?)\s+\(#");
+
+            // ArrivalTerminal
+            // ArrDate
+            $itsegment['ArrDate'] = strtotime($this->normalizeDate($this->http->FindSingleNode("./td[3]/descendant::text()[normalize-space(.)][2]", $root)));
+
+            // AirlineName
+            $itsegment['AirlineName'] = $this->http->FindSingleNode(".//td[1]", $root, true, "#^(\w{2})\d+$#");
+
+            // Operator
+            // Aircraft
+            // TraveledMiles
+            // AwardMiles
+            // Cabin
+            $itsegment['Cabin'] = $this->http->FindSingleNode(".//td[4]", $root);
+
+            // BookingClass
+            // PendingUpgradeTo
+            // Seats
+            $itsegment['Seats'] = $this->http->FindSingleNode(".//td[5]", $root, true, "#.*\d+\w$#");
+
+            // Duration
+            // Meal
+            $itsegment['Meal'] = $this->http->FindSingleNode(".//td[6]", $root);
+
+            // Smoking
+            // Stops
+            $it['TripSegments'][] = $itsegment;
+        }
+        $itineraries[] = $it;
+    }
+
+    public function detectEmailFromProvider($from)
+    {
+        return strpos($from, $this->reFrom) !== false;
+    }
+
+    public function detectEmailByHeaders(array $headers)
+    {
+        foreach ($this->reSubject as $re) {
+            if (strpos($headers["subject"], $re) !== false) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public function detectEmailByBody(\PlancakeEmailParser $parser)
+    {
+        $body = $parser->getHTMLBody();
+
+        if (strpos($body, $this->reBody) === false) {
+            return false;
+        }
+
+        foreach ($this->reBody2 as $re) {
+            if (strpos($body, $re) !== false) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public function ParsePlanEmail(\PlancakeEmailParser $parser)
+    {
+        $this->date = strtotime($parser->getHeader('date'));
+
+        $this->http->FilterHTML = false;
+        $itineraries = [];
+
+        foreach ($this->reBody2 as $lang=>$re) {
+            if (strpos($this->http->Response["body"], $re) !== false) {
+                $this->lang = $lang;
+
+                break;
+            }
+        }
+
+        $this->parseHtml($itineraries);
+
+        $a = explode('\\', __CLASS__);
+        $result = [
+            'emailType'  => end($a) . ucfirst($this->lang),
+            'parsedData' => [
+                'Itineraries' => $itineraries,
+            ],
+        ];
+
+        return $result;
+    }
+
+    public static function getEmailLanguages()
+    {
+        return array_keys(self::$dictionary);
+    }
+
+    public static function getEmailTypesCount()
+    {
+        return count(self::$dictionary);
+    }
+
+    private function nextText($field, $root = null, $n = 1)
+    {
+        $rule = $this->eq($field);
+
+        return $this->http->FindSingleNode("(.//text()[{$rule}])[1]/following::text()[normalize-space(.)][{$n}]", $root);
+    }
+
+    private function t($word)
+    {
+        if (!isset(self::$dictionary[$this->lang]) || !isset(self::$dictionary[$this->lang][$word])) {
+            return $word;
+        }
+
+        return self::$dictionary[$this->lang][$word];
+    }
+
+    private function normalizeDate($str)
+    {
+        // $this->http->log($str);
+        $year = date("Y", $this->date);
+        $in = [
+            "#^(\d+:\d+)\s+\|\s+[^\d\s]+,\s+(\d+) ([^\d\s]+) (\d{2})$#", //09:00 | Thu, 01 Sep 16
+        ];
+        $out = [
+            "$2 $3 20$4, $1",
+        ];
+        $str = preg_replace($in, $out, $str);
+
+        if (preg_match("#\d+\s+([^\d\s]+)\s+\d{4}#", $str, $m)) {
+            if ($en = MonthTranslate::translate($m[1], $this->lang)) {
+                $str = str_replace($m[1], $en, $str);
+            }
+        }
+
+        return $str;
+    }
+
+    private function re($re, $str, $c = 1)
+    {
+        preg_match($re, $str, $m);
+
+        if (isset($m[$c])) {
+            return $m[$c];
+        }
+
+        return null;
+    }
+
+    private function amount($s)
+    {
+        return (float) str_replace(",", ".", preg_replace("#[.,](\d{3})#", "$1", $s));
+    }
+
+    private function currency($s)
+    {
+        $sym = [
+            '€'=> 'EUR',
+            '$'=> 'USD',
+        ];
+
+        if ($code = $this->re("#(?:^|\s)([A-Z]{3})(?:$|\s)#", $s)) {
+            return $code;
+        }
+
+        foreach ($sym as $f=>$r) {
+            if (strpos($s, $f) !== false) {
+                return $r;
+            }
+        }
+
+        return null;
+    }
+
+    private function eq($field)
+    {
+        $field = (array) $field;
+
+        if (count($field) == 0) {
+            return 'false';
+        }
+
+        return implode(" or ", array_map(function ($s) { return "normalize-space(.)=\"{$s}\""; }, $field));
+    }
+
+    private function starts($field)
+    {
+        $field = (array) $field;
+
+        if (count($field) == 0) {
+            return 'false';
+        }
+
+        return implode(" or ", array_map(function ($s) { return "starts-with(normalize-space(.), \"{$s}\")"; }, $field));
+    }
+
+    private function contains($field)
+    {
+        $field = (array) $field;
+
+        if (count($field) == 0) {
+            return 'false';
+        }
+
+        return implode(" or ", array_map(function ($s) { return "contains(normalize-space(.), \"{$s}\")"; }, $field));
+    }
+}

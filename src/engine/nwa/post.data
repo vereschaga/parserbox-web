@@ -1,0 +1,24 @@
+https://www.nwa.com/cgi-bin/wp_acctsum.pro
+
+POST https://www.nwa.com/cgi-bin/wp_acctsum.pro HTTP/1.1
+Host: www.nwa.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; rv:1.7.3) Gecko/20040913 Firefox/0.10.1
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://www.nwa.com/
+Cookie: s_cc=true; s_sq=nwmain%3D%2526pid%253DHome%2526pidt%253D1%2526oid%253D/images/shared/buttons/button_viewaccount.gif%2526ot%253DIMAGE
+Proxy-Authorization: NTLM TlRMTVNTUAADAAAAGAAYAHAAAAAYABgAiAAAAAgACABIAAAAEAAQAFAAAAAQABAAYAAAAAAAAACgAAAABYKIogUBKAoAAAAPUABHAEUAUwBBAGwAdAB5AG4AYwBlAHYAQQBMAFQAWQBOAEMARQBWADAxuP1WvBAYAAAAAAAAAAAAAAAAAAAAAPbav3MpxI0TbpqOQYtjFa2J6hyBO4+/SQ==
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 76
+account=100401094054&WpNum=&LastName=&Pin=&name=Vereschaga&pin=9813&x=32&y=8
+HTTP/1.x 200 OK
+Server: Netscape-Enterprise/6.0
+Date: Tue, 12 Oct 2004 10:14:22 GMT
+Content-Type: text/html
+Set-Cookie: WorldPerks=100401094054&Vereschaga%20&Alexi%20&Mr%20&Base&2005&0&A; path=/; expires=Wed, 12-Oct-2005 10:13:41 GMT; domain=.nwa.com
+Set-Cookie: WP_PIN=; path=/; expires=Thu, 01-Jan-1970 00:00:01 GMT; domain=.nwa.com; secure
+Transfer-Encoding: chunked

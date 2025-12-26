@@ -1,0 +1,1351 @@
+{
+    "AD": {
+        "name": "Andorra"
+    },
+    "AE": {
+        "name": "United Arab Emirates",
+        "states": {
+            "AJ": "Ajman",
+            "AUH": "Abu Dhabi",
+            "DXB": "Dubai",
+            "FUJ": "Fujairah",
+            "RAK": "Ras al Khaimah",
+            "SHJ": "Sharjah",
+            "UAQ": "Umm al Quain"
+        }
+    },
+    "AF": {
+        "name": "Afghanistan"
+    },
+    "AG": {
+        "name": "Antigua and Barbuda"
+    },
+    "AI": {
+        "name": "Anguilla/St Kitts"
+    },
+    "AL": {
+        "name": "Albania"
+    },
+    "AM": {
+        "name": "Armenia"
+    },
+    "AN": {
+        "name": "Netherlands Antilles"
+    },
+    "AO": {
+        "name": "Angola"
+    },
+    "AQ": {
+        "name": "Antarctica"
+    },
+    "AR": {
+        "name": "Argentina",
+        "states": {
+            "AR": "Argentina State"
+        }
+    },
+    "AS": {
+        "name": "American Samoa"
+    },
+    "AT": {
+        "name": "Austria",
+        "states": {
+            "BU": "Burgenland",
+            "KA": "Kaernten",
+            "NI": "Niederoesterreich",
+            "OB": "Oberoesterreich",
+            "SA": "Salzburg",
+            "ST": "Steiermark",
+            "TI": "Tirol",
+            "VO": "Vorarlberg",
+            "WI": "Wien"
+        }
+    },
+    "AU": {
+        "name": "Australia",
+        "states": {
+            "ACT": "Australian Capital Territory",
+            "NSW": "New South Wales",
+            "NT": "Northern Territory",
+            "QLD": "Queensland",
+            "SA": "South Australia",
+            "TAS": "Tasmania",
+            "VIC": "Victoria",
+            "WA": "Western Australia"
+        }
+    },
+    "AW": {
+        "name": "Aruba"
+    },
+    "AZ": {
+        "name": "Azerbaijan",
+        "states": {
+            "AZ": "Azerbaijan State"
+        }
+    },
+    "BA": {
+        "name": "Bosnia Herzegovina"
+    },
+    "BB": {
+        "name": "Barbados"
+    },
+    "BD": {
+        "name": "Bangladesh"
+    },
+    "BE": {
+        "name": "Belgium",
+        "states": {
+            "BE": "Belgium State"
+        }
+    },
+    "BF": {
+        "name": "Burkina Fasa"
+    },
+    "BG": {
+        "name": "Bulgaria"
+    },
+    "BH": {
+        "name": "Bahrain",
+        "states": {
+            "BH": "Bahrain State"
+        }
+    },
+    "BI": {
+        "name": "Burundi"
+    },
+    "BJ": {
+        "name": "Benin"
+    },
+    "BM": {
+        "name": "Bermuda"
+    },
+    "BN": {
+        "name": "Brunei Darussalam"
+    },
+    "BO": {
+        "name": "Bolivia"
+    },
+    "BQ": {
+        "name": "Bonaire,Saba,St Eustatius"
+    },
+    "BR": {
+        "name": "Brazil",
+        "states": {
+            "BR": "Brazil State"
+        }
+    },
+    "BS": {
+        "name": "Bahamas"
+    },
+    "BT": {
+        "name": "Bhutan"
+    },
+    "BV": {
+        "name": "Bouvet Island"
+    },
+    "BW": {
+        "name": "Botswana"
+    },
+    "BY": {
+        "name": "Belarus"
+    },
+    "BZ": {
+        "name": "Belize"
+    },
+    "CA": {
+        "name": "Canada",
+        "states": {
+            "AB": "Alberta",
+            "BC": "British Columbia",
+            "MB": "Manitoba",
+            "NB": "New Brunswick",
+            "NL": "Newfoundland & Labrador",
+            "NS": "Nova Scotia",
+            "NT": "Northwest Territories",
+            "NU": "Nanavut",
+            "ON": "Ontario",
+            "PE": "Prince Edward Island",
+            "QC": "Quebec",
+            "SK": "Saskatchewan",
+            "YT": "Yukon Territories"
+        }
+    },
+    "CC": {
+        "name": "Cocos (Keeling) Islands"
+    },
+    "CD": {
+        "name": "Congo, The Democratic Republic of the"
+    },
+    "CF": {
+        "name": "Central African Republic"
+    },
+    "CG": {
+        "name": "Congo"
+    },
+    "CH": {
+        "name": "Switzerland",
+        "states": {
+            "AG": "Aargau",
+            "AI": "Appenzell Innerroden",
+            "AR": "Appenzell Ausserroden",
+            "BE": "Bern",
+            "BL": "Basel Land",
+            "BS": "Basel Stadt",
+            "FL": "Lichtenstein",
+            "FR": "Friburg",
+            "GE": "Geneva",
+            "GL": "Glarus",
+            "GR": "Graubuenden",
+            "JU": "Jura",
+            "LU": "Luzern",
+            "NE": "Neuchatel",
+            "NW": "Nidwalden",
+            "OW": "Obwalden",
+            "SG": "Sankt Gallen",
+            "SH": "Schaffhausen",
+            "SO": "Solothum",
+            "SZ": "Schwyzs",
+            "TG": "Thurgau",
+            "TI": "Ticino",
+            "UR": "Uri",
+            "VD": "Vaud",
+            "VS": "Wallis",
+            "ZG": "Zug",
+            "ZH": "Zurich"
+        }
+    },
+    "CI": {
+        "name": "Cote D'Ivoire"
+    },
+    "CK": {
+        "name": "Cook Island"
+    },
+    "CL": {
+        "name": "Chile"
+    },
+    "CM": {
+        "name": "Cameroon"
+    },
+    "CN": {
+        "name": "China",
+        "states": {
+            "AH": "Anhui",
+            "CQ": "Chongqing",
+            "FJ": "Fujian",
+            "GD": "Guangdong",
+            "GS": "Gansu",
+            "GX": "Guangxi",
+            "GZ": "Guizhou",
+            "HAN": "Hainan",
+            "HB": "Hebei",
+            "HLJ": "Heilongjiang",
+            "HN": "Henan",
+            "HUB": "Hubei",
+            "HUN": "Hunan",
+            "JL": "Jilin",
+            "JS": "Jiangsu",
+            "JX": "Jiangxi",
+            "LN": "Liaoning",
+            "NMG": "Neimennggu",
+            "NX": "Nigxia",
+            "PK": "Beijing",
+            "QH": "Qinghai",
+            "SC": "Sichuan",
+            "SD": "Shandong",
+            "SHA": "Shanghai",
+            "SX": "Shanxi",
+            "TJ": "Tianjin",
+            "XJ": "Xianjing",
+            "XZ": "Xizang",
+            "YN": "Yunnan",
+            "ZJ": "Zhejiang"
+        }
+    },
+    "CO": {
+        "name": "Colombia"
+    },
+    "CR": {
+        "name": "Costa Rica"
+    },
+    "CU": {
+        "name": "Cuba"
+    },
+    "CV": {
+        "name": "Cape Verde"
+    },
+    "CW": {
+        "name": "Curacao"
+    },
+    "CX": {
+        "name": "Christmas Island"
+    },
+    "CY": {
+        "name": "Cyprus"
+    },
+    "CZ": {
+        "name": "Czech Republic",
+        "states": {
+            "CZ": "Czech Republic State"
+        }
+    },
+    "DE": {
+        "name": "Germany",
+        "states": {
+            "BA": "Bayern (Bavaria)",
+            "BB": "Bradenburg",
+            "BE": "Berlin",
+            "BR": "Brandenburg",
+            "BW": "Baden-Württemberg (Baden-Wuerttemberg)",
+            "BY": "Bavaria",
+            "HB": "Bremen",
+            "HE": "Hessen",
+            "HH": "Hamburg",
+            "MV": "Mecklenburg-Vorpommern",
+            "NS": "Niedersachsen",
+            "NW": "Nordrhein-Westfalen",
+            "RP": "Rheinland-Pfalz",
+            "SA": "Sachsen",
+            "SAA": "Sachsen-Anhalt",
+            "SH": "Schleswig-Holstein",
+            "SL": "Saarland",
+            "SN": "Sachsen",
+            "TH": "Thüringen (Thueringen)"
+        }
+    },
+    "DJ": {
+        "name": "Djibouti"
+    },
+    "DK": {
+        "name": "Denmark",
+        "states": {
+            "DK": "Denmark"
+        }
+    },
+    "DM": {
+        "name": "Dominica"
+    },
+    "DO": {
+        "name": "Dominican Republic"
+    },
+    "DZ": {
+        "name": "Algeria"
+    },
+    "EC": {
+        "name": "Ecuador"
+    },
+    "EE": {
+        "name": "Estonia"
+    },
+    "EG": {
+        "name": "Egypt",
+        "states": {
+            "EG": "Egypt"
+        }
+    },
+    "EH": {
+        "name": "Western Sahara"
+    },
+    "ER": {
+        "name": "Eritrea"
+    },
+    "ES": {
+        "name": "Spain",
+        "states": {
+            "AB": "Albacete",
+            "AL": "Almeria",
+            "AV": "Avila",
+            "BA": "Badajoz",
+            "BI": "Vizcaya",
+            "BU": "Burgos",
+            "CA": "Cadiz",
+            "CC": "Caceres",
+            "CE": "Ceuta",
+            "CO": "Cordoba",
+            "CR": "Ciudad Real",
+            "CS": "Castellon",
+            "CU": "Cuenca",
+            "GC": "Las Palmas",
+            "GI": "Gerona",
+            "GR": "Granada",
+            "GU": "Guadalajara",
+            "HU": "Huesca",
+            "LE": "Leon",
+            "LO": "La Rioja",
+            "LU": "Lugo",
+            "MA": "Malaga",
+            "ML": "Melilla",
+            "MU": "Murcia",
+            "NA": "Navarra",
+            "OR": "Orense",
+            "PM": "Islas Baleares",
+            "PO": "Pontevedra",
+            "SA": "Salamanca",
+            "SE": "Sevilla",
+            "SG": "Segovia",
+            "SO": "Soria",
+            "SS": "Guipuzcoa",
+            "TE": "Teruel",
+            "TF": "Santa Cruz de Tenerife",
+            "TO": "Toledo",
+            "VA": "Valladolid",
+            "VI": "Alava",
+            "ZA": "Zamora"
+        }
+    },
+    "ET": {
+        "name": "Ethiopia"
+    },
+    "FI": {
+        "name": "Finland",
+        "states": {
+            "FI": "Finland"
+        }
+    },
+    "FJ": {
+        "name": "Fiji"
+    },
+    "FK": {
+        "name": "Falkland Islands"
+    },
+    "FM": {
+        "name": "Micronesia, Federated States of"
+    },
+    "FO": {
+        "name": "Faroe Islands"
+    },
+    "FR": {
+        "name": "France",
+        "states": {
+            "FR": "France State"
+        }
+    },
+    "FX": {
+        "name": "France"
+    },
+    "GA": {
+        "name": "Gabon"
+    },
+    "GB": {
+        "name": "DO NOT USE"
+    },
+    "GD": {
+        "name": "Grenada"
+    },
+    "GE": {
+        "name": "Georgia"
+    },
+    "GF": {
+        "name": "French Guiana"
+    },
+    "GG": {
+        "name": "Guernsey"
+    },
+    "GH": {
+        "name": "Ghana"
+    },
+    "GI": {
+        "name": "Gibraltar"
+    },
+    "GL": {
+        "name": "Greenland"
+    },
+    "GM": {
+        "name": "Gambia"
+    },
+    "GN": {
+        "name": "Guinea"
+    },
+    "GP": {
+        "name": "Guadeloupe/St Martin"
+    },
+    "GQ": {
+        "name": "Equatorial Guinea"
+    },
+    "GR": {
+        "name": "Greece",
+        "states": {
+            "GR": "Greece"
+        }
+    },
+    "GS": {
+        "name": "South Georgia and the South Sandwich Islands"
+    },
+    "GT": {
+        "name": "Guatemala"
+    },
+    "GU": {
+        "name": "Guam"
+    },
+    "GW": {
+        "name": "Guinea Bissau"
+    },
+    "GY": {
+        "name": "Guyana"
+    },
+    "HK": {
+        "name": "Hong Kong",
+        "states": {
+            "HK": "Hongkong State"
+        }
+    },
+    "HM": {
+        "name": "Heard and McDonald Islands"
+    },
+    "HN": {
+        "name": "Honduras"
+    },
+    "HR": {
+        "name": "Croatia"
+    },
+    "HT": {
+        "name": "Haiti"
+    },
+    "HU": {
+        "name": "Hungary"
+    },
+    "ID": {
+        "name": "Indonesia"
+    },
+    "IE": {
+        "name": "Ireland",
+        "states": {
+            "IE": "Ireland State"
+        }
+    },
+    "IL": {
+        "name": "Israel"
+    },
+    "IM": {
+        "name": "Isle Of Man"
+    },
+    "IN": {
+        "name": "India",
+        "states": {
+            "IN": "India State"
+        }
+    },
+    "IO": {
+        "name": "British Indian Ocean Territory"
+    },
+    "IQ": {
+        "name": "Iraq"
+    },
+    "IR": {
+        "name": "Iran",
+        "states": {
+            "IR": "Iran State"
+        }
+    },
+    "IS": {
+        "name": "Iceland"
+    },
+    "IT": {
+        "name": "Italy",
+        "states": {
+            "AG": "Agrigento",
+            "AL": "Alessandria",
+            "AN": "Ancona",
+            "AO": "Aosta",
+            "AP": "Ascoli Piceno",
+            "AQ": "L' Aquila",
+            "AR": "Arezzo",
+            "AT": "Asti",
+            "AV": "Avellino",
+            "BA": "Bari",
+            "BG": "Bergamo",
+            "BI": "Biella",
+            "BL": "Belluno",
+            "BN": "Benevento",
+            "BO": "Bologna",
+            "BR": "Brindisi",
+            "BS": "Brescia",
+            "BZ": "Bolzano",
+            "CA": "Cagliari",
+            "CB": "Campobasso",
+            "CE": "Caserta",
+            "CH": "Chieti",
+            "CI": "Carbonia-Iglesias",
+            "CL": "Caltanisetta",
+            "CN": "Cuneo",
+            "CO": "Como",
+            "CR": "Cremona",
+            "CS": "Cosenza",
+            "CT": "Catania",
+            "CZ": "Catanzaro",
+            "EN": "Enna",
+            "FC": "Forlesena",
+            "FE": "Ferrara",
+            "FG": "Foggia",
+            "FI": "Firenze",
+            "FO": "Forli'",
+            "FR": "Frosinone",
+            "GE": "Genova",
+            "GO": "Gorizia",
+            "GR": "Grosseto",
+            "IM": "Imperia",
+            "IS": "Isernia",
+            "KR": "Crotone",
+            "LC": "Lecco",
+            "LE": "Lecce",
+            "LI": "Livorno",
+            "LO": "Lodi",
+            "LT": "Latina",
+            "LU": "Lucca",
+            "MA": "Medio Campidano",
+            "MB": "Monza e della Brianza",
+            "MC": "Macerata",
+            "ME": "Messina",
+            "MI": "Milano",
+            "MN": "Mantova",
+            "MO": "Modena",
+            "MS": "Massa Carrara",
+            "MT": "Matera",
+            "NA": "Napoli",
+            "NO": "Novara",
+            "NU": "Nuoro",
+            "OG": "Ogliastra",
+            "OR": "Oristano",
+            "OT": "Olbia-Tempio",
+            "PA": "Palermo",
+            "PC": "Piacenza",
+            "PD": "Padova",
+            "PE": "Pescara",
+            "PG": "Perugia",
+            "PI": "Pisa",
+            "PN": "Pordenone",
+            "PO": "Prato",
+            "PR": "Parma",
+            "PS": "Pesaro",
+            "PT": "Pistoia",
+            "PV": "Pavia",
+            "PZ": "Potenza",
+            "RA": "Ravenna",
+            "RC": "Reggio Calabria",
+            "RE": "Reggio Emilia",
+            "RG": "Ragusa",
+            "RI": "Rieti",
+            "RM": "Roma",
+            "RN": "Rimini",
+            "RO": "Rovigo",
+            "SA": "Salerno",
+            "SI": "Siena",
+            "SO": "Sondrio",
+            "SP": "La Spezia",
+            "SR": "Siracusa",
+            "SS": "Sassari",
+            "SV": "Savona",
+            "TA": "Taranto",
+            "TE": "Teramo",
+            "TN": "Trento",
+            "TO": "Torino",
+            "TP": "Trapani",
+            "TR": "Terni",
+            "TS": "Trieste",
+            "TV": "Treviso",
+            "UD": "Udine",
+            "VA": "Varese",
+            "VB": "Verbania",
+            "VC": "Vercelli",
+            "VE": "Venezia",
+            "VI": "Vicenza",
+            "VR": "Verona",
+            "VT": "Viterbo",
+            "VV": "Vino Valentia"
+        }
+    },
+    "JE": {
+        "name": "Jersey"
+    },
+    "JM": {
+        "name": "Jamaica"
+    },
+    "JO": {
+        "name": "Jordan",
+        "states": {
+            "JO": "Jordan"
+        }
+    },
+    "JP": {
+        "name": "Japan",
+        "states": {
+            "AA": "Akita",
+            "AI": "Aichi",
+            "AO": "Aomori",
+            "CB": "Chiba",
+            "EH": "Ehime",
+            "FK": "Fukui",
+            "FO": "Fukuoka",
+            "FS": "Fukushima",
+            "GF": "Gifu",
+            "GN": "Gunma",
+            "HO": "Hokkaido",
+            "HS": "Hiroshima",
+            "HY": "Hyogo",
+            "IB": "Ibaraki",
+            "IK": "Ishikawa",
+            "IW": "Iwate",
+            "KA": "Kagawa",
+            "KC": "Kochi",
+            "KG": "Kagoshima",
+            "KN": "Kanagawa",
+            "KT": "Kyoto",
+            "KU": "Kumamoto",
+            "MG": "Miyagi",
+            "MM": "Mie",
+            "MZ": "Miyazaki",
+            "NG": "Nagano",
+            "NI": "Niigata",
+            "NK": "Nagasaki",
+            "NR": "Nara",
+            "OI": "Ohita",
+            "OS": "Osaka",
+            "OW": "Okinawa",
+            "OY": "Okayama",
+            "SH": "Shimane",
+            "SI": "Shiga",
+            "SS": "Saga",
+            "ST": "Saitama",
+            "SZ": "Shizuoka",
+            "TC": "Tochigi",
+            "TK": "Tokyo",
+            "TS": "Tokushima",
+            "TT": "Tottori",
+            "TY": "Toyama",
+            "WK": "Wakayama",
+            "YC": "Yamaguchi",
+            "YG": "Yamagata",
+            "YN": "Yamanashi"
+        }
+    },
+    "KE": {
+        "name": "Kenya"
+    },
+    "KG": {
+        "name": "Kyrgzstan"
+    },
+    "KH": {
+        "name": "Cambodia"
+    },
+    "KI": {
+        "name": "Kiribati"
+    },
+    "KM": {
+        "name": "Comoros"
+    },
+    "KN": {
+        "name": "Saint Kitts and Nevis"
+    },
+    "KP": {
+        "name": "Korea,Democratic People's Republic of"
+    },
+    "KR": {
+        "name": "Korea, Republic Of",
+        "states": {
+            "KR": "South Korea"
+        }
+    },
+    "KW": {
+        "name": "Kuwait",
+        "states": {
+            "KW": "Kuwait"
+        }
+    },
+    "KY": {
+        "name": "Cayman Islands"
+    },
+    "KZ": {
+        "name": "Kazakhstan",
+        "states": {
+            "KZ": "Kazakhstan State"
+        }
+    },
+    "LA": {
+        "name": "Laos"
+    },
+    "LB": {
+        "name": "Lebanon",
+        "states": {
+            "LB": "Lebanon"
+        }
+    },
+    "LC": {
+        "name": "Saint Lucia"
+    },
+    "LI": {
+        "name": "Liechtenstein"
+    },
+    "LK": {
+        "name": "Sri Lanka"
+    },
+    "LR": {
+        "name": "Liberia"
+    },
+    "LS": {
+        "name": "Lesotho"
+    },
+    "LT": {
+        "name": "Lithuania"
+    },
+    "LU": {
+        "name": "Luxembourg"
+    },
+    "LV": {
+        "name": "Latvia"
+    },
+    "LY": {
+        "name": "Libyan Arab Jamahiriya"
+    },
+    "MA": {
+        "name": "Morocco"
+    },
+    "MC": {
+        "name": "Monaco"
+    },
+    "MD": {
+        "name": "Moldova"
+    },
+    "ME": {
+        "name": "Montenegro"
+    },
+    "MG": {
+        "name": "Madagascar"
+    },
+    "MH": {
+        "name": "Marshall Islands"
+    },
+    "MI": {
+        "name": "Midway Islands"
+    },
+    "MK": {
+        "name": "Macedonia"
+    },
+    "ML": {
+        "name": "Mali"
+    },
+    "MM": {
+        "name": "Myanmar"
+    },
+    "MN": {
+        "name": "Mongolia"
+    },
+    "MO": {
+        "name": "Macau"
+    },
+    "MP": {
+        "name": "Northern Mariana Islands"
+    },
+    "MQ": {
+        "name": "Martinique"
+    },
+    "MR": {
+        "name": "Mauritania"
+    },
+    "MS": {
+        "name": "Montserrat"
+    },
+    "MT": {
+        "name": "Malta"
+    },
+    "MU": {
+        "name": "Mauritius"
+    },
+    "MV": {
+        "name": "Maldives"
+    },
+    "MW": {
+        "name": "Malawi"
+    },
+    "MX": {
+        "name": "Mexico",
+        "states": {
+            "MX": "Mexico"
+        }
+    },
+    "MY": {
+        "name": "Malaysia",
+        "states": {
+            "MY": "Malaysia State"
+        }
+    },
+    "MZ": {
+        "name": "Mozambique"
+    },
+    "NA": {
+        "name": "Namibia"
+    },
+    "NC": {
+        "name": "New Caledonia"
+    },
+    "NE": {
+        "name": "Niger"
+    },
+    "NF": {
+        "name": "Norfolk Island"
+    },
+    "NG": {
+        "name": "Nigeria",
+        "states": {
+            "NG": "Nigeria"
+        }
+    },
+    "NI": {
+        "name": "Nicaragua"
+    },
+    "NL": {
+        "name": "Netherlands",
+        "states": {
+            "NL": "Netherlands State"
+        }
+    },
+    "NO": {
+        "name": "Norway",
+        "states": {
+            "NO": "Norway"
+        }
+    },
+    "NP": {
+        "name": "Nepal"
+    },
+    "NR": {
+        "name": "Nauru"
+    },
+    "NU": {
+        "name": "Niue"
+    },
+    "NZ": {
+        "name": "New Zealand"
+    },
+    "OM": {
+        "name": "Oman",
+        "states": {
+            "OM": "Oman"
+        }
+    },
+    "PA": {
+        "name": "Panama"
+    },
+    "PE": {
+        "name": "Peru"
+    },
+    "PF": {
+        "name": "French Polynesia"
+    },
+    "PG": {
+        "name": "Papua New Guinea"
+    },
+    "PH": {
+        "name": "Philippines"
+    },
+    "PK": {
+        "name": "Pakistan",
+        "states": {
+            "PK": "Pakistan"
+        }
+    },
+    "PL": {
+        "name": "Poland"
+    },
+    "PM": {
+        "name": "Saint Pierre And Miquelon"
+    },
+    "PN": {
+        "name": "Pitcairn"
+    },
+    "PR": {
+        "name": "Puerto Rico"
+    },
+    "PS": {
+        "name": "Palestinian Occupied Territory"
+    },
+    "PT": {
+        "name": "Portugal",
+        "states": {
+            "PT": "Portugal"
+        }
+    },
+    "PW": {
+        "name": "Palau"
+    },
+    "PY": {
+        "name": "Paraguay"
+    },
+    "QA": {
+        "name": "Qatar",
+        "states": {
+            "QA": "Qatar State"
+        }
+    },
+    "RE": {
+        "name": "Reunion"
+    },
+    "RO": {
+        "name": "Romania",
+        "states": {
+            "RO": "Romania"
+        }
+    },
+    "RQ": {
+        "name": "Russian Federation",
+        "states": {
+            "RQ": "Russian Federation - States"
+        }
+    },
+    "RS": {
+        "name": "Serbia"
+    },
+    "RU": {
+        "name": "Russia"
+    },
+    "RW": {
+        "name": "Rwanda"
+    },
+    "SA": {
+        "name": "Saudi Arabia",
+        "states": {
+            "SA": "Saudi Arabia State"
+        }
+    },
+    "SB": {
+        "name": "Solomon Islands"
+    },
+    "SC": {
+        "name": "Seychelles"
+    },
+    "SD": {
+        "name": "Sudan"
+    },
+    "SE": {
+        "name": "Sweden",
+        "states": {
+            "SE": "Sweden"
+        }
+    },
+    "SG": {
+        "name": "Singapore",
+        "states": {
+            "SG": "Singapore State"
+        }
+    },
+    "SH": {
+        "name": "Saint Helena"
+    },
+    "SI": {
+        "name": "Slovenia"
+    },
+    "SJ": {
+        "name": "Svalbard and Jan Mayen Islands"
+    },
+    "SK": {
+        "name": "Slovakia"
+    },
+    "SL": {
+        "name": "Sierra Leone"
+    },
+    "SM": {
+        "name": "San Marino"
+    },
+    "SN": {
+        "name": "Senegal"
+    },
+    "SO": {
+        "name": "Somalia"
+    },
+    "SR": {
+        "name": "Suriname"
+    },
+    "SS": {
+        "name": "South Sudan"
+    },
+    "ST": {
+        "name": "Sao Tome and Principe"
+    },
+    "SV": {
+        "name": "El Salvador"
+    },
+    "SX": {
+        "name": "Sint Maarten"
+    },
+    "SY": {
+        "name": "Syria"
+    },
+    "SZ": {
+        "name": "Swaziland"
+    },
+    "TC": {
+        "name": "Turks and Caicos Islands"
+    },
+    "TD": {
+        "name": "Chad"
+    },
+    "TF": {
+        "name": "French Souther Territories"
+    },
+    "TG": {
+        "name": "Togo"
+    },
+    "TH": {
+        "name": "Thailand"
+    },
+    "TJ": {
+        "name": "Tajikistan"
+    },
+    "TK": {
+        "name": "Tokelau"
+    },
+    "TM": {
+        "name": "Turkmenistan"
+    },
+    "TN": {
+        "name": "Tunisia"
+    },
+    "TO": {
+        "name": "Tonga"
+    },
+    "TP": {
+        "name": "East Timor"
+    },
+    "TR": {
+        "name": "Turkey",
+        "states": {
+            "TR": "Turkey"
+        }
+    },
+    "TT": {
+        "name": "Trinidad And Tobago"
+    },
+    "TV": {
+        "name": "Tuvalu"
+    },
+    "TW": {
+        "name": "Taiwan",
+        "states": {
+            "TW": "Taiwan"
+        }
+    },
+    "TZ": {
+        "name": "Tanzania"
+    },
+    "UA": {
+        "name": "Ukraine",
+        "states": {
+            "UA": "Ukraine"
+        }
+    },
+    "UG": {
+        "name": "Uganda"
+    },
+    "UK": {
+        "name": "Great Britain",
+        "states": {
+            "ABE": "Aberdeenshire",
+            "ANG": "Anglesey",
+            "ANS": "Angus",
+            "ARG": "Argyllshire",
+            "AYR": "Ayrshire",
+            "BAN": "Banffshire",
+            "BED": "Bedfordshire",
+            "BER": "Berkshire",
+            "BEW": "Berwickshire",
+            "BRE": "Brecknockshire",
+            "BUC": "Buckinghamshire",
+            "BUT": "Buteshire",
+            "CAE": "Caernarfonshire",
+            "CAI": "Caithness",
+            "CAM": "Cambridgeshire",
+            "CAS": "Carmarthenshire",
+            "CHE": "Cheshire",
+            "CLA": "Clackmannashire",
+            "COR": "Cornwall",
+            "CRO": "Cromartyshire",
+            "CUM": "Cumberland",
+            "DEN": "Denbighshire",
+            "DER": "Derbyshire",
+            "DEV": "Devon",
+            "DOR": "Dorset",
+            "DUM": "Dumfriesshire",
+            "DUN": "Dunbartonshire",
+            "DUR": "Durham",
+            "EAS": "East Lothian",
+            "ESS": "Essex",
+            "FIF": "Fife",
+            "FLI": "Flintshire",
+            "GLA": "Glamorgan",
+            "GLO": "Gloucestershire",
+            "HAM": "Hampshire",
+            "HER": "Herefordshire",
+            "HET": "Hertfordshire",
+            "HUN": "Huntingdonshire",
+            "INV": "Inverness-shire",
+            "KEN": "Kent",
+            "KIK": "Kirkcudbrightshire",
+            "KIN": "Kincardineshire",
+            "KIS": "Kinross-shire",
+            "LAN": "Lancashire",
+            "LAS": "Lanarkshire",
+            "LEI": "Leicestershire",
+            "LIN": "Lincolnshire",
+            "MER": "Merioneth",
+            "MID": "Middlesex",
+            "MIL": "Midlothian",
+            "MON": "Monmouthshire",
+            "MOR": "Morayshire",
+            "MOT": "Montgomeryshire",
+            "NAI": "Nairnshire",
+            "NFK": "Norfolk",
+            "NOM": "Northumberland",
+            "NOR": "Northamptonshire",
+            "NOT": "Nottinghamshire",
+            "ORK": "Orkney",
+            "OXF": "Oxfordshire",
+            "PEE": "Peeblesshire",
+            "PEM": "Pembrokeshire",
+            "PER": "Perthshire",
+            "RAD": "Radnorshire",
+            "REN": "Renfrewshire",
+            "ROS": "Ross-shire",
+            "ROX": "Roxburghshire",
+            "RUT": "Rutland",
+            "SEL": "Selkirkshire",
+            "SHE": "Shetland",
+            "SHR": "Shropshire",
+            "SOM": "Somerset",
+            "STA": "Staffordshire",
+            "STI": "Stirlingshire",
+            "SUF": "Suffolk",
+            "SUR": "Surrey",
+            "SUS": "Sussex",
+            "SUT": "Sutherland",
+            "WAR": "Warwickshire",
+            "WEL": "West Lothian",
+            "WES": "Westmorland",
+            "WIG": "Wigtownshire",
+            "WIL": "Wiltshire",
+            "WOR": "Worcestershire",
+            "YOR": "Yorkshire"
+        }
+    },
+    "UM": {
+        "name": "United States Minor Outlying Islands"
+    },
+    "US": {
+        "name": "United States",
+        "states": {
+            "AK": "Alaska",
+            "AL": "Alabama",
+            "AR": "Arkansas",
+            "AS": "American Samoa",
+            "AZ": "Arizona",
+            "CA": "California",
+            "CO": "Colorado",
+            "CT": "Connecticut",
+            "DC": "District of Columbia",
+            "DE": "Delaware",
+            "FL": "Florida",
+            "FM": "Federated States of Micronesia",
+            "GA": "Georgia",
+            "GU": "Guam",
+            "HI": "Hawaii",
+            "IA": "Iowa",
+            "ID": "Idaho",
+            "IL": "Illinois",
+            "IN": "Indiana",
+            "KS": "Kansas",
+            "KY": "Kentucky",
+            "LA": "Louisiana",
+            "MA": "Massachusetts",
+            "MD": "Maryland",
+            "ME": "Maine",
+            "MH": "Marshall Islands",
+            "MI": "Michigan",
+            "MN": "Minnesota",
+            "MO": "Missouri",
+            "MP": "Northern Mariana Islands",
+            "MS": "Mississippi",
+            "MT": "Montana",
+            "NC": "North Carolina",
+            "ND": "North Dakota",
+            "NE": "Nebraska",
+            "NH": "New Hampshire",
+            "NJ": "New Jersey",
+            "NM": "New Mexico",
+            "NV": "Nevada",
+            "NY": "New York",
+            "OH": "Ohio",
+            "OK": "Oklahoma",
+            "OR": "Oregon",
+            "PA": "Pennslyvania",
+            "PR": "Puerto Rico",
+            "PW": "Palau",
+            "RI": "Rhode Island",
+            "SC": "South Carolina",
+            "SD": "South Dakota",
+            "TN": "Tennessee",
+            "TX": "Texas",
+            "UT": "Utah",
+            "VA": "Virginia",
+            "VI": "Virgin Islands",
+            "VT": "Vermont",
+            "WA": "Washington",
+            "WI": "Wisconsin",
+            "WV": "West Virginia",
+            "WY": "Wyoming"
+        }
+    },
+    "UY": {
+        "name": "Uruguay"
+    },
+    "UZ": {
+        "name": "Uzbekistan"
+    },
+    "VA": {
+        "name": "Vatican City State"
+    },
+    "VC": {
+        "name": "Saint Vincent And The Grenadines"
+    },
+    "VE": {
+        "name": "Venezuela"
+    },
+    "VG": {
+        "name": "Virgin Islands, British"
+    },
+    "VI": {
+        "name": "Virgin Islands, US"
+    },
+    "VN": {
+        "name": "Vietnam"
+    },
+    "VU": {
+        "name": "Vanuatu"
+    },
+    "WF": {
+        "name": "Wallis and Futuna Islands"
+    },
+    "WS": {
+        "name": "Samoa"
+    },
+    "XK": {
+        "name": "Kosovo"
+    },
+    "YE": {
+        "name": "Yemen"
+    },
+    "YT": {
+        "name": "Mayotte"
+    },
+    "ZA": {
+        "name": "South Africa",
+        "states": {
+            "ZA": "South Africa State"
+        }
+    },
+    "ZM": {
+        "name": "Zambia"
+    },
+    "ZR": {
+        "name": "Zaire"
+    },
+    "ZW": {
+        "name": "Zimbabwe"
+    }
+}
