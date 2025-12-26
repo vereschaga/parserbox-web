@@ -1,0 +1,812 @@
+0 verbose cli /usr/local/lib/nodejs/node-v16.17.0-linux-x64/bin/node /usr/local/lib/nodejs/node-v16.17.0-linux-x64/bin/npm
+1 info using npm@8.15.0
+2 info using node@v16.17.0
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 3ms
+5 timing config:load:file:/usr/local/lib/nodejs/node-v16.17.0-linux-x64/lib/node_modules/npm/npmrc Completed in 4ms
+6 timing config:load:builtin Completed in 4ms
+7 timing config:load:cli Completed in 2ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:file:/www/awardwallet/.npmrc Completed in 1ms
+10 timing config:load:project Completed in 35ms
+11 timing config:load:file:/home/user/.npmrc Completed in 1ms
+12 timing config:load:user Completed in 1ms
+13 timing config:load:file:/usr/local/lib/nodejs/node-v16.17.0-linux-x64/etc/npmrc Completed in 0ms
+14 timing config:load:global Completed in 0ms
+15 timing config:load:validate Completed in 0ms
+16 timing config:load:credentials Completed in 3ms
+17 timing config:load:setEnvs Completed in 2ms
+18 timing config:load Completed in 54ms
+19 timing npm:load:configload Completed in 55ms
+20 timing npm:load:mkdirpcache Completed in 2ms
+21 timing npm:load:mkdirplogs Completed in 1ms
+22 verbose title npm i
+23 verbose argv "i"
+24 timing npm:load:setTitle Completed in 3ms
+25 timing config:load:flatten Completed in 4ms
+26 timing npm:load:display Completed in 8ms
+27 verbose logfile logs-max:10 dir:/home/user/.npm/_logs
+28 verbose logfile /home/user/.npm/_logs/2025-03-17T06_44_21_718Z-debug-0.log
+29 timing npm:load:logFile Completed in 12ms
+30 timing npm:load:timers Completed in 0ms
+31 timing npm:load:configScope Completed in 0ms
+32 timing npm:load Completed in 86ms
+33 timing arborist:ctor Completed in 0ms
+34 silly logfile start cleaning logs, removing 1 files
+35 silly logfile done cleaning log files
+36 timing idealTree:init Completed in 251ms
+37 timing idealTree:userRequests Completed in 0ms
+38 silly idealTree buildDeps
+39 timing idealTree:#root Completed in 0ms
+40 timing idealTree:buildDeps Completed in 3ms
+41 timing idealTree:fixDepFlags Completed in 0ms
+42 timing idealTree Completed in 265ms
+43 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+44 timing reify:loadTrees Completed in 394ms
+45 timing reify:diffTrees Completed in 12ms
+46 silly reify mark retired [ '/www/awardwallet/node_modules/ansi-colors' ]
+47 silly reify mark retired [
+47 silly reify   '/www/awardwallet/node_modules/bower',
+47 silly reify   '/www/awardwallet/node_modules/.bin/bower'
+47 silly reify ]
+48 silly reify mark retired [ '/www/awardwallet/node_modules/braces' ]
+49 silly reify mark retired [ '/www/awardwallet/node_modules/ansi-regex' ]
+50 silly reify mark retired [ '/www/awardwallet/node_modules/ansi-styles' ]
+51 silly reify mark retired [ '/www/awardwallet/node_modules/color-convert' ]
+52 silly reify mark retired [ '/www/awardwallet/node_modules/commander' ]
+53 silly reify mark retired [ '/www/awardwallet/node_modules/colorette' ]
+54 silly reify mark retired [ '/www/awardwallet/node_modules/cosmiconfig' ]
+55 silly reify mark retired [ '/www/awardwallet/node_modules/chalk' ]
+56 silly reify mark retired [ '/www/awardwallet/node_modules/color-name' ]
+57 silly reify mark retired [ '/www/awardwallet/node_modules/debug' ]
+58 silly reify mark retired [ '/www/awardwallet/node_modules/dedent' ]
+59 silly reify mark retired [ '/www/awardwallet/node_modules/enquirer' ]
+60 silly reify mark retired [ '/www/awardwallet/node_modules/execa' ]
+61 silly reify mark retired [ '/www/awardwallet/node_modules/fill-range' ]
+62 silly reify mark retired [ '/www/awardwallet/node_modules/is-stream' ]
+63 silly reify mark retired [ '/www/awardwallet/node_modules/lines-and-columns' ]
+64 silly reify mark retired [ '/www/awardwallet/node_modules/is-unicode-supported' ]
+65 silly reify mark retired [
+65 silly reify   '/www/awardwallet/node_modules/lint-staged',
+65 silly reify   '/www/awardwallet/node_modules/.bin/lint-staged'
+65 silly reify ]
+66 silly reify mark retired [ '/www/awardwallet/node_modules/listr2' ]
+67 silly reify mark retired [ '/www/awardwallet/node_modules/micromatch' ]
+68 silly reify mark retired [ '/www/awardwallet/node_modules/log-symbols' ]
+69 silly reify mark retired [ '/www/awardwallet/node_modules/picomatch' ]
+70 silly reify mark retired [ '/www/awardwallet/node_modules/signal-exit' ]
+71 silly reify mark retired [ '/www/awardwallet/node_modules/strip-ansi' ]
+72 silly reify mark retired [ '/www/awardwallet/node_modules/@babel/highlight' ]
+73 silly reify mark retired [ '/www/awardwallet/node_modules/string-width' ]
+74 silly reify mark retired [ '/www/awardwallet/node_modules/tslib' ]
+75 silly reify mark retired [ '/www/awardwallet/node_modules/@babel/code-frame' ]
+76 silly reify mark retired [ '/www/awardwallet/node_modules/@babel/helper-validator-identifier' ]
+77 silly reify mark retired [ '/www/awardwallet/node_modules/rxjs' ]
+78 silly reify mark retired [ '/www/awardwallet/node_modules/supports-color' ]
+79 silly reify mark retired [ '/www/awardwallet/node_modules/@types/parse-json' ]
+80 silly reify moves {
+80 silly reify   '/www/awardwallet/node_modules/ansi-colors': '/www/awardwallet/node_modules/.ansi-colors-z0NUBQfi',
+80 silly reify   '/www/awardwallet/node_modules/bower': '/www/awardwallet/node_modules/.bower-yi8yL5HH',
+80 silly reify   '/www/awardwallet/node_modules/.bin/bower': '/www/awardwallet/node_modules/.bin/.bower-nj7OcSpg',
+80 silly reify   '/www/awardwallet/node_modules/braces': '/www/awardwallet/node_modules/.braces-UsePRoc9',
+80 silly reify   '/www/awardwallet/node_modules/ansi-regex': '/www/awardwallet/node_modules/.ansi-regex-3xHrSnLG',
+80 silly reify   '/www/awardwallet/node_modules/ansi-styles': '/www/awardwallet/node_modules/.ansi-styles-Qr8LGDVz',
+80 silly reify   '/www/awardwallet/node_modules/color-convert': '/www/awardwallet/node_modules/.color-convert-QCu4IOUz',
+80 silly reify   '/www/awardwallet/node_modules/commander': '/www/awardwallet/node_modules/.commander-HKeW4Vfm',
+80 silly reify   '/www/awardwallet/node_modules/colorette': '/www/awardwallet/node_modules/.colorette-Q0E8SGqn',
+80 silly reify   '/www/awardwallet/node_modules/cosmiconfig': '/www/awardwallet/node_modules/.cosmiconfig-CdiyUvLN',
+80 silly reify   '/www/awardwallet/node_modules/chalk': '/www/awardwallet/node_modules/.chalk-t8hQ5lOd',
+80 silly reify   '/www/awardwallet/node_modules/color-name': '/www/awardwallet/node_modules/.color-name-iOUdcmTs',
+80 silly reify   '/www/awardwallet/node_modules/debug': '/www/awardwallet/node_modules/.debug-FTdyBXBw',
+80 silly reify   '/www/awardwallet/node_modules/dedent': '/www/awardwallet/node_modules/.dedent-pkwnbmvl',
+80 silly reify   '/www/awardwallet/node_modules/enquirer': '/www/awardwallet/node_modules/.enquirer-dMZohlX0',
+80 silly reify   '/www/awardwallet/node_modules/execa': '/www/awardwallet/node_modules/.execa-JRU6BSre',
+80 silly reify   '/www/awardwallet/node_modules/fill-range': '/www/awardwallet/node_modules/.fill-range-x1W77AQr',
+80 silly reify   '/www/awardwallet/node_modules/is-stream': '/www/awardwallet/node_modules/.is-stream-nlbhwzI7',
+80 silly reify   '/www/awardwallet/node_modules/lines-and-columns': '/www/awardwallet/node_modules/.lines-and-columns-kAho9F6C',
+80 silly reify   '/www/awardwallet/node_modules/is-unicode-supported': '/www/awardwallet/node_modules/.is-unicode-supported-jx1eDa5n',
+80 silly reify   '/www/awardwallet/node_modules/lint-staged': '/www/awardwallet/node_modules/.lint-staged-Df54fsTk',
+80 silly reify   '/www/awardwallet/node_modules/.bin/lint-staged': '/www/awardwallet/node_modules/.bin/.lint-staged-VfK6QSOD',
+80 silly reify   '/www/awardwallet/node_modules/listr2': '/www/awardwallet/node_modules/.listr2-DCw1ujXK',
+80 silly reify   '/www/awardwallet/node_modules/micromatch': '/www/awardwallet/node_modules/.micromatch-8f5fYAjZ',
+80 silly reify   '/www/awardwallet/node_modules/log-symbols': '/www/awardwallet/node_modules/.log-symbols-G6AsbxHw',
+80 silly reify   '/www/awardwallet/node_modules/picomatch': '/www/awardwallet/node_modules/.picomatch-Qbs3uGNU',
+80 silly reify   '/www/awardwallet/node_modules/signal-exit': '/www/awardwallet/node_modules/.signal-exit-wLwH5uh2',
+80 silly reify   '/www/awardwallet/node_modules/strip-ansi': '/www/awardwallet/node_modules/.strip-ansi-1In8PVKG',
+80 silly reify   '/www/awardwallet/node_modules/@babel/highlight': '/www/awardwallet/node_modules/@babel/.highlight-UkcaCQHw',
+80 silly reify   '/www/awardwallet/node_modules/string-width': '/www/awardwallet/node_modules/.string-width-Pqwk4eOm',
+80 silly reify   '/www/awardwallet/node_modules/tslib': '/www/awardwallet/node_modules/.tslib-HOa2QQrz',
+80 silly reify   '/www/awardwallet/node_modules/@babel/code-frame': '/www/awardwallet/node_modules/@babel/.code-frame-ruI96Erh',
+80 silly reify   '/www/awardwallet/node_modules/@babel/helper-validator-identifier': '/www/awardwallet/node_modules/@babel/.helper-validator-identifier-Oky8qneX',
+80 silly reify   '/www/awardwallet/node_modules/rxjs': '/www/awardwallet/node_modules/.rxjs-HU0XxEzo',
+80 silly reify   '/www/awardwallet/node_modules/supports-color': '/www/awardwallet/node_modules/.supports-color-OHRBiOF5',
+80 silly reify   '/www/awardwallet/node_modules/@types/parse-json': '/www/awardwallet/node_modules/@types/.parse-json-FYwcxLFR'
+80 silly reify }
+81 timing reify:retireShallow Completed in 54ms
+82 timing reify:createSparse Completed in 96ms
+83 timing reify:loadBundles Completed in 0ms
+84 silly audit bulk request {
+84 silly audit   '@awardwallet/extension-client': [ '1.1.10', '1.1.8' ],
+84 silly audit   '@awardwallet/extension-v3': [ '3.2.12' ],
+84 silly audit   '@awardwallet/jquery.json-viewer': [ '1.4.0' ],
+84 silly audit   '@babel/code-frame': [ '7.23.5' ],
+84 silly audit   '@babel/helper-validator-identifier': [ '7.22.20' ],
+84 silly audit   '@babel/highlight': [ '7.23.4' ],
+84 silly audit   '@discoveryjs/json-ext': [ '0.5.7' ],
+84 silly audit   '@jridgewell/gen-mapping': [ '0.3.3' ],
+84 silly audit   '@jridgewell/resolve-uri': [ '3.1.1' ],
+84 silly audit   '@jridgewell/set-array': [ '1.1.2' ],
+84 silly audit   '@jridgewell/source-map': [ '0.3.5' ],
+84 silly audit   '@jridgewell/sourcemap-codec': [ '1.4.15' ],
+84 silly audit   '@jridgewell/trace-mapping': [ '0.3.22' ],
+84 silly audit   '@protobufjs/aspromise': [ '1.1.2' ],
+84 silly audit   '@protobufjs/base64': [ '1.1.2' ],
+84 silly audit   '@protobufjs/codegen': [ '2.0.4' ],
+84 silly audit   '@protobufjs/eventemitter': [ '1.1.0' ],
+84 silly audit   '@protobufjs/fetch': [ '1.1.0' ],
+84 silly audit   '@protobufjs/float': [ '1.0.2' ],
+84 silly audit   '@protobufjs/inquire': [ '1.1.0' ],
+84 silly audit   '@protobufjs/path': [ '1.1.2' ],
+84 silly audit   '@protobufjs/pool': [ '1.1.0' ],
+84 silly audit   '@protobufjs/utf8': [ '1.1.0' ],
+84 silly audit   '@types/eslint': [ '8.56.2' ],
+84 silly audit   '@types/eslint-scope': [ '3.7.7' ],
+84 silly audit   '@types/estree': [ '1.0.5' ],
+84 silly audit   '@types/json-schema': [ '7.0.15' ],
+84 silly audit   '@types/node': [ '20.11.16' ],
+84 silly audit   '@types/parse-json': [ '4.0.2' ],
+84 silly audit   '@webassemblyjs/ast': [ '1.11.6' ],
+84 silly audit   '@webassemblyjs/floating-point-hex-parser': [ '1.11.6' ],
+84 silly audit   '@webassemblyjs/helper-api-error': [ '1.11.6' ],
+84 silly audit   '@webassemblyjs/helper-buffer': [ '1.11.6' ],
+84 silly audit   '@webassemblyjs/helper-numbers': [ '1.11.6' ],
+84 silly audit   '@webassemblyjs/helper-wasm-bytecode': [ '1.11.6' ],
+84 silly audit   '@webassemblyjs/helper-wasm-section': [ '1.11.6' ],
+84 silly audit   '@webassemblyjs/ieee754': [ '1.11.6' ],
+84 silly audit   '@webassemblyjs/leb128': [ '1.11.6' ],
+84 silly audit   '@webassemblyjs/utf8': [ '1.11.6' ],
+84 silly audit   '@webassemblyjs/wasm-edit': [ '1.11.6' ],
+84 silly audit   '@webassemblyjs/wasm-gen': [ '1.11.6' ],
+84 silly audit   '@webassemblyjs/wasm-opt': [ '1.11.6' ],
+84 silly audit   '@webassemblyjs/wasm-parser': [ '1.11.6' ],
+84 silly audit   '@webassemblyjs/wast-printer': [ '1.11.6' ],
+84 silly audit   '@webpack-cli/configtest': [ '2.1.1' ],
+84 silly audit   '@webpack-cli/info': [ '2.0.2' ],
+84 silly audit   '@webpack-cli/serve': [ '2.0.5' ],
+84 silly audit   '@xtuc/ieee754': [ '1.2.0' ],
+84 silly audit   '@xtuc/long': [ '4.2.2' ],
+84 silly audit   acorn: [ '8.11.3' ],
+84 silly audit   'acorn-import-assertions': [ '1.9.0' ],
+84 silly audit   'aggregate-error': [ '3.1.0' ],
+84 silly audit   ajv: [ '6.12.6' ],
+84 silly audit   'ajv-keywords': [ '3.5.2' ],
+84 silly audit   'ansi-colors': [ '4.1.3' ],
+84 silly audit   'ansi-escapes': [ '4.3.2' ],
+84 silly audit   'ansi-regex': [ '5.0.1' ],
+84 silly audit   'ansi-styles': [ '3.2.1', '4.3.0' ],
+84 silly audit   asap: [ '2.0.6' ],
+84 silly audit   'astral-regex': [ '2.0.0' ],
+84 silly audit   'base64-arraybuffer': [ '1.0.2' ],
+84 silly audit   braces: [ '3.0.3' ],
+84 silly audit   browserslist: [ '4.22.3' ],
+84 silly audit   'buffer-from': [ '1.1.2' ],
+84 silly audit   callsites: [ '3.1.0' ],
+84 silly audit   'caniuse-lite': [ '1.0.30001585' ],
+84 silly audit   centrifuge: [ '5.3.2' ],
+84 silly audit   chalk: [ '2.4.2', '4.1.2' ],
+84 silly audit   'has-flag': [ '3.0.0', '4.0.0' ],
+84 silly audit   'supports-color': [ '5.5.0', '8.1.1', '7.2.0' ],
+84 silly audit   'chrome-trace-event': [ '1.0.3' ],
+84 silly audit   'clean-stack': [ '2.2.0' ],
+84 silly audit   'cli-cursor': [ '3.1.0' ],
+84 silly audit   'cli-truncate': [ '2.1.0' ],
+84 silly audit   'clone-deep': [ '4.0.1' ],
+84 silly audit   'color-convert': [ '1.9.3', '2.0.1' ],
+84 silly audit   'color-name': [ '1.1.3', '1.1.4' ],
+84 silly audit   colorette: [ '1.4.0', '2.0.20' ],
+84 silly audit   commander: [ '8.3.0', '2.20.3', '10.0.1' ],
+84 silly audit   cosmiconfig: [ '7.1.0' ],
+84 silly audit   'cross-fetch': [ '3.2.0' ],
+84 silly audit   'cross-spawn': [ '7.0.3' ],
+84 silly audit   'css-line-break': [ '2.1.0' ],
+84 silly audit   debug: [ '4.3.4' ],
+84 silly audit   'detect-europe-js': [ '0.1.2' ],
+84 silly audit   'electron-to-chromium': [ '1.4.661' ],
+84 silly audit   'emoji-regex': [ '8.0.0' ],
+84 silly audit   'enhanced-resolve': [ '5.15.0' ],
+84 silly audit   enquirer: [ '2.4.1' ],
+84 silly audit   envinfo: [ '7.11.1' ],
+84 silly audit   'error-ex': [ '1.3.2' ],
+84 silly audit   'es-module-lexer': [ '1.4.1' ],
+84 silly audit   escalade: [ '3.1.2' ],
+84 silly audit   'escape-string-regexp': [ '1.0.5' ],
+84 silly audit   'eslint-scope': [ '5.1.1' ],
+84 silly audit   esrecurse: [ '4.3.0' ],
+84 silly audit   estraverse: [ '5.3.0', '4.3.0' ],
+84 silly audit   events: [ '3.3.0' ],
+84 silly audit   execa: [ '5.1.1' ],
+84 silly audit   'fast-deep-equal': [ '3.1.3' ],
+84 silly audit   'fast-json-stable-stringify': [ '2.1.0' ],
+84 silly audit   'fastest-levenshtein': [ '1.0.16' ],
+84 silly audit   fbemitter: [ '3.0.0' ],
+84 silly audit   fbjs: [ '3.0.5' ],
+84 silly audit   'fbjs-css-vars': [ '1.0.2' ],
+84 silly audit   'ua-parser-js': [ '1.0.40', '2.0.0' ],
+84 silly audit   'fill-range': [ '7.1.1' ],
+84 silly audit   'find-up': [ '4.1.0' ],
+84 silly audit   flat: [ '5.0.2' ],
+84 silly audit   'function-bind': [ '1.1.2' ],
+84 silly audit   'get-own-enumerable-property-symbols': [ '3.0.2' ],
+84 silly audit   'get-stream': [ '6.0.1' ],
+84 silly audit   'glob-to-regexp': [ '0.4.1' ],
+84 silly audit   'graceful-fs': [ '4.2.11' ],
+84 silly audit   hasown: [ '2.0.0' ],
+84 silly audit   html2canvas: [ '1.4.1' ],
+84 silly audit   'human-signals': [ '2.1.0' ],
+84 silly audit   husky: [ '6.0.0' ],
+84 silly audit   'import-fresh': [ '3.3.0' ],
+84 silly audit   'import-local': [ '3.1.0' ],
+84 silly audit   'indent-string': [ '4.0.0' ],
+84 silly audit   interpret: [ '3.1.1' ],
+84 silly audit   'is-arrayish': [ '0.2.1' ],
+84 silly audit   'is-core-module': [ '2.13.1' ],
+84 silly audit   'is-fullwidth-code-point': [ '3.0.0' ],
+84 silly audit   'is-number': [ '7.0.0' ],
+84 silly audit   'is-obj': [ '1.0.1' ],
+84 silly audit   'is-plain-object': [ '2.0.4' ],
+84 silly audit   'is-regexp': [ '1.0.0' ],
+84 silly audit   'is-standalone-pwa': [ '0.1.1' ],
+84 silly audit   'is-stream': [ '2.0.1' ],
+84 silly audit   isexe: [ '2.0.0' ],
+84 silly audit   isobject: [ '3.0.1' ],
+84 silly audit   'jest-worker': [ '27.5.1' ],
+84 silly audit   jquery: [ '1.11.1' ],
+84 silly audit   'jquery-ui': [ '1.10.0' ],
+84 silly audit   'jquery.cookie': [ '1.4.1' ],
+84 silly audit   'js-tokens': [ '4.0.0' ],
+84 silly audit   'json-parse-even-better-errors': [ '2.3.1' ],
+84 silly audit   'json-schema-traverse': [ '0.4.1' ],
+84 silly audit   'kind-of': [ '6.0.3' ],
+84 silly audit   'lines-and-columns': [ '1.2.4' ],
+84 silly audit   'lint-staged': [ '11.2.6' ],
+84 silly audit   listr2: [ '3.14.0' ],
+84 silly audit   'loader-runner': [ '4.3.0' ],
+84 silly audit   'locate-path': [ '5.0.0' ],
+84 silly audit   'log-update': [ '4.0.0' ],
+84 silly audit   'slice-ansi': [ '4.0.0', '3.0.0' ],
+84 silly audit   'wrap-ansi': [ '6.2.0', '7.0.0' ],
+84 silly audit   long: [ '5.2.3' ],
+84 silly audit   'loose-envify': [ '1.4.0' ],
+84 silly audit   'lru-cache': [ '6.0.0' ],
+84 silly audit   'merge-stream': [ '2.0.0' ],
+84 silly audit   micromatch: [ '4.0.8' ],
+84 silly audit   'mime-db': [ '1.52.0' ],
+84 silly audit   'mime-types': [ '2.1.35' ],
+84 silly audit   'mimic-fn': [ '2.1.0' ],
+84 silly audit   ms: [ '2.1.2' ],
+84 silly audit   'neo-async': [ '2.6.2' ],
+84 silly audit   'node-fetch': [ '2.7.0' ],
+84 silly audit   'node-releases': [ '2.0.14' ],
+84 silly audit   'normalize-path': [ '3.0.0' ],
+84 silly audit   'npm-run-path': [ '4.0.1' ],
+84 silly audit   'object-assign': [ '4.1.1' ],
+84 silly audit   onetime: [ '5.1.2' ],
+84 silly audit   'p-limit': [ '2.3.0' ],
+84 silly audit   'p-locate': [ '4.1.0' ],
+84 silly audit   'p-map': [ '4.0.0' ],
+84 silly audit   'p-try': [ '2.2.0' ],
+84 silly audit   'parent-module': [ '1.0.1' ],
+84 silly audit   'parse-json': [ '5.2.0' ],
+84 silly audit   'path-exists': [ '4.0.0' ],
+84 silly audit   'path-key': [ '3.1.1' ],
+84 silly audit   'path-parse': [ '1.0.7' ],
+84 silly audit   'path-type': [ '4.0.0' ],
+84 silly audit   picocolors: [ '1.0.0' ],
+84 silly audit   picomatch: [ '2.3.1' ],
+84 silly audit   'pkg-dir': [ '4.2.0' ],
+84 silly audit   'please-upgrade-node': [ '3.2.0' ],
+84 silly audit   promise: [ '7.3.1' ],
+84 silly audit   protobufjs: [ '7.2.6' ],
+84 silly audit   punycode: [ '2.3.1' ],
+84 silly audit   randombytes: [ '2.1.0' ],
+84 silly audit   rechoir: [ '0.8.0' ],
+84 silly audit   requirejs: [ '2.1.22' ],
+84 silly audit   resolve: [ '1.22.8' ],
+84 silly audit   'resolve-cwd': [ '3.0.0' ],
+84 silly audit   'resolve-from': [ '5.0.0', '4.0.0' ],
+84 silly audit   'restore-cursor': [ '3.1.0' ],
+84 silly audit   rfdc: [ '1.3.1' ],
+84 silly audit   rxjs: [ '7.8.1' ],
+84 silly audit   'safe-buffer': [ '5.2.1' ],
+84 silly audit   'schema-utils': [ '3.3.0' ],
+84 silly audit   semver: [ '7.6.0' ],
+84 silly audit   'semver-compare': [ '1.0.0' ],
+84 silly audit   'serialize-javascript': [ '6.0.2' ],
+84 silly audit   setimmediate: [ '1.0.5' ],
+84 silly audit   'shallow-clone': [ '3.0.1' ],
+84 silly audit   'shebang-command': [ '2.0.0' ],
+84 silly audit   'shebang-regex': [ '3.0.0' ],
+84 silly audit   'signal-exit': [ '3.0.7' ],
+84 silly audit   'source-map': [ '0.6.1', '0.7.4' ],
+84 silly audit   'source-map-support': [ '0.5.21' ],
+84 silly audit   'string-argv': [ '0.3.1' ],
+84 silly audit   'string-width': [ '4.2.3' ],
+84 silly audit   'stringify-object': [ '3.3.0' ],
+84 silly audit   'strip-ansi': [ '6.0.1' ],
+84 silly audit   'strip-final-newline': [ '2.0.0' ],
+84 silly audit   'supports-preserve-symlinks-flag': [ '1.0.0' ],
+84 silly audit   tapable: [ '2.2.1' ],
+84 silly audit   terser: [ '5.27.0' ],
+84 silly audit   'terser-webpack-plugin': [ '5.3.10' ],
+84 silly audit   'text-segmentation': [ '1.0.3' ],
+84 silly audit   through: [ '2.3.8' ],
+84 silly audit   'to-regex-range': [ '5.0.1' ],
+84 silly audit   tr46: [ '0.0.3' ],
+84 silly audit   'ts-loader': [ '9.5.1' ],
+84 silly audit   tslib: [ '2.6.2' ],
+84 silly audit   'type-fest': [ '0.21.3' ],
+84 silly audit   typescript: [ '5.3.3' ],
+84 silly audit   'ua-is-frozen': [ '0.1.2' ],
+84 silly audit   'undici-types': [ '5.26.5' ],
+84 silly audit   'update-browserslist-db': [ '1.0.13' ],
+84 silly audit   'uri-js': [ '4.4.1' ],
+84 silly audit   utrie: [ '1.0.2' ],
+84 silly audit   watchpack: [ '2.4.0' ],
+84 silly audit   'webextension-polyfill': [ '0.10.0' ],
+84 silly audit   'webidl-conversions': [ '3.0.1' ],
+84 silly audit   webpack: [ '5.90.1' ],
+84 silly audit   'webpack-cli': [ '5.1.4' ],
+84 silly audit   'webpack-merge': [ '5.10.0' ],
+84 silly audit   'webpack-sources': [ '3.2.3' ],
+84 silly audit   'whatwg-url': [ '5.0.0' ],
+84 silly audit   which: [ '2.0.2' ],
+84 silly audit   wildcard: [ '2.0.1' ],
+84 silly audit   yallist: [ '4.0.0' ],
+84 silly audit   yaml: [ '1.10.2' ]
+84 silly audit }
+85 silly tarball no local data for @awardwallet/jquery.json-viewer@https://npm.pkg.github.com/download/@awardwallet/jquery.json-viewer/1.4.0/384ff1b1b524cf8329240563dd8798d9af757677. Extracting by manifest.
+86 silly tarball no local data for @awardwallet/extension-v3@https://npm.pkg.github.com/download/@awardwallet/extension-v3/3.2.12/07afd72a6b5f416f4d61f693ed3e6dc534fb7bf5. Extracting by manifest.
+87 silly tarball no local data for @awardwallet/extension-client@https://npm.pkg.github.com/download/@awardwallet/extension-client/1.1.10/d4195baa816588fbc4ed7050fd581e02992b7b42. Extracting by manifest.
+88 silly tarball no local data for @awardwallet/extension-client@https://npm.pkg.github.com/download/@awardwallet/extension-client/1.1.8/c55da6f421b00caa8eac15e893d130ddb4eb494c. Extracting by manifest.
+89 timing reifyNode:node_modules/setimmediate Completed in 1221ms
+90 timing reifyNode:node_modules/@webassemblyjs/helper-api-error Completed in 1229ms
+91 timing reifyNode:node_modules/shallow-clone Completed in 1248ms
+92 timing reifyNode:node_modules/path-parse Completed in 1251ms
+93 timing reifyNode:node_modules/object-assign Completed in 1252ms
+94 timing reifyNode:node_modules/clone-deep Completed in 1256ms
+95 timing reifyNode:node_modules/buffer-from Completed in 1257ms
+96 timing reifyNode:node_modules/@webassemblyjs/helper-wasm-bytecode Completed in 1261ms
+97 timing reifyNode:node_modules/@webassemblyjs/helper-buffer Completed in 1262ms
+98 timing reifyNode:node_modules/@webassemblyjs/wasm-opt Completed in 1262ms
+99 timing reifyNode:node_modules/@types/eslint-scope Completed in 1265ms
+100 timing reifyNode:node_modules/@types/parse-json Completed in 1265ms
+101 timing reifyNode:node_modules/ansi-styles Completed in 1265ms
+102 timing reifyNode:node_modules/slice-ansi/node_modules/color-name Completed in 1277ms
+103 timing reifyNode:node_modules/ts-loader/node_modules/color-name Completed in 1287ms
+104 timing reifyNode:node_modules/wrap-ansi/node_modules/color-name Completed in 1279ms
+105 timing reifyNode:node_modules/log-update/node_modules/color-name Completed in 1280ms
+106 timing reifyNode:node_modules/webidl-conversions Completed in 1295ms
+107 timing reifyNode:node_modules/serialize-javascript Completed in 1295ms
+108 timing reifyNode:node_modules/resolve-cwd Completed in 1299ms
+109 timing reifyNode:node_modules/pkg-dir Completed in 1304ms
+110 timing reifyNode:node_modules/p-try Completed in 1304ms
+111 timing reifyNode:node_modules/path-exists Completed in 1304ms
+112 timing reifyNode:node_modules/p-limit Completed in 1304ms
+113 timing reifyNode:node_modules/p-locate Completed in 1305ms
+114 timing reifyNode:node_modules/chalk/node_modules/has-flag Completed in 1299ms
+115 timing reifyNode:node_modules/isobject Completed in 1306ms
+116 timing reifyNode:node_modules/is-plain-object Completed in 1306ms
+117 timing reifyNode:node_modules/find-up Completed in 1307ms
+118 timing reifyNode:node_modules/fbjs-css-vars Completed in 1307ms
+119 timing reifyNode:node_modules/lru-cache Completed in 1314ms
+120 timing reifyNode:node_modules/locate-path Completed in 1314ms
+121 timing reifyNode:node_modules/@webassemblyjs/ieee754 Completed in 1310ms
+122 timing reifyNode:node_modules/@webassemblyjs/helper-numbers Completed in 1311ms
+123 timing reifyNode:node_modules/@webassemblyjs/floating-point-hex-parser Completed in 1312ms
+124 timing reifyNode:node_modules/supports-color Completed in 1315ms
+125 timing reifyNode:node_modules/signal-exit Completed in 1315ms
+126 timing reifyNode:node_modules/fill-range Completed in 1314ms
+127 timing reifyNode:node_modules/is-stream Completed in 1316ms
+128 timing reifyNode:node_modules/ansi-regex Completed in 1316ms
+129 timing reifyNode:node_modules/string-width Completed in 1317ms
+130 timing reifyNode:node_modules/ts-loader/node_modules/supports-color Completed in 1325ms
+131 timing reifyNode:node_modules/strip-ansi Completed in 1318ms
+132 timing reifyNode:node_modules/resolve-cwd/node_modules/resolve-from Completed in 1325ms
+133 timing reifyNode:node_modules/yallist Completed in 1332ms
+134 timing reifyNode:node_modules/kind-of Completed in 1343ms
+135 timing reifyNode:node_modules/import-local Completed in 1347ms
+136 timing reifyNode:node_modules/glob-to-regexp Completed in 1347ms
+137 timing reifyNode:node_modules/esrecurse Completed in 1348ms
+138 timing reifyNode:node_modules/chalk/node_modules/supports-color Completed in 1346ms
+139 timing reifyNode:node_modules/@webpack-cli/serve Completed in 1351ms
+140 timing reifyNode:node_modules/@webpack-cli/info Completed in 1352ms
+141 timing reifyNode:node_modules/@webassemblyjs/wast-printer Completed in 1351ms
+142 timing reifyNode:node_modules/@webpack-cli/configtest Completed in 1352ms
+143 timing reifyNode:node_modules/@webassemblyjs/helper-wasm-section Completed in 1352ms
+144 timing reifyNode:node_modules/@types/json-schema Completed in 1352ms
+145 timing reifyNode:node_modules/lines-and-columns Completed in 1353ms
+146 timing reifyNode:node_modules/colorette Completed in 1352ms
+147 timing reifyNode:node_modules/ts-loader/node_modules/ansi-styles Completed in 1361ms
+148 timing reifyNode:node_modules/wrap-ansi/node_modules/ansi-styles Completed in 1355ms
+149 timing reifyNode:node_modules/interpret Completed in 1360ms
+150 timing reifyNode:node_modules/slice-ansi/node_modules/ansi-styles Completed in 1358ms
+151 timing reifyNode:node_modules/picocolors Completed in 1374ms
+152 timing reifyNode:node_modules/mime-types Completed in 1374ms
+153 timing reifyNode:node_modules/loader-runner Completed in 1377ms
+154 timing reifyNode:node_modules/graceful-fs Completed in 1376ms
+155 timing reifyNode:node_modules/log-update/node_modules/ansi-styles Completed in 1374ms
+156 timing reifyNode:node_modules/@xtuc/ieee754 Completed in 1379ms
+157 timing reifyNode:node_modules/@webassemblyjs/wasm-edit Completed in 1379ms
+158 timing reifyNode:node_modules/@types/estree Completed in 1379ms
+159 timing reifyNode:node_modules/@protobufjs/eventemitter Completed in 1379ms
+160 timing reifyNode:node_modules/@protobufjs/base64 Completed in 1379ms
+161 timing reifyNode:node_modules/@protobufjs/path Completed in 1380ms
+162 timing reifyNode:node_modules/@protobufjs/codegen Completed in 1379ms
+163 timing reifyNode:node_modules/@protobufjs/fetch Completed in 1380ms
+164 timing reifyNode:node_modules/@protobufjs/aspromise Completed in 1380ms
+165 timing reifyNode:node_modules/color-name Completed in 1381ms
+166 timing reifyNode:node_modules/update-browserslist-db Completed in 1392ms
+167 timing reifyNode:node_modules/safe-buffer Completed in 1395ms
+168 timing reifyNode:node_modules/randombytes Completed in 1397ms
+169 timing reifyNode:node_modules/loose-envify Completed in 1398ms
+170 timing reifyNode:node_modules/@protobufjs/pool Completed in 1402ms
+171 timing reifyNode:node_modules/@babel/code-frame Completed in 1401ms
+172 timing reifyNode:node_modules/micromatch Completed in 1402ms
+173 timing reifyNode:node_modules/webpack-cli/node_modules/colorette Completed in 1413ms
+174 timing reifyNode:node_modules/@babel/highlight Completed in 1406ms
+175 timing reifyNode:node_modules/listr2/node_modules/colorette Completed in 1406ms
+176 timing reifyNode:node_modules/rechoir Completed in 1416ms
+177 timing reifyNode:node_modules/punycode Completed in 1415ms
+178 timing reifyNode:node_modules/acorn-import-assertions Completed in 1415ms
+179 timing reifyNode:node_modules/@webassemblyjs/wasm-gen Completed in 1414ms
+180 timing reifyNode:node_modules/debug Completed in 1416ms
+181 timing reifyNode:node_modules/ansi-colors Completed in 1418ms
+182 timing reifyNode:node_modules/color-convert Completed in 1418ms
+183 timing reifyNode:node_modules/ts-loader/node_modules/color-convert Completed in 1428ms
+184 timing reifyNode:node_modules/wrap-ansi/node_modules/color-convert Completed in 1421ms
+185 timing reifyNode:node_modules/slice-ansi/node_modules/color-convert Completed in 1422ms
+186 timing reifyNode:node_modules/log-update/node_modules/color-convert Completed in 1422ms
+187 timing reifyNode:node_modules/flat Completed in 1439ms
+188 timing reifyNode:node_modules/estraverse Completed in 1441ms
+189 timing reifyNode:node_modules/chrome-trace-event Completed in 1441ms
+190 timing reifyNode:node_modules/asap Completed in 1442ms
+191 timing reifyNode:node_modules/@webassemblyjs/leb128 Completed in 1442ms
+192 timing reifyNode:node_modules/chalk Completed in 1442ms
+193 timing reifyNode:node_modules/esrecurse/node_modules/estraverse Completed in 1448ms
+194 timing reifyNode:node_modules/escalade Completed in 1458ms
+195 timing reifyNode:node_modules/@webassemblyjs/utf8 Completed in 1458ms
+196 timing reifyNode:node_modules/@protobufjs/utf8 Completed in 1459ms
+197 timing reifyNode:node_modules/ts-loader/node_modules/chalk Completed in 1468ms
+198 timing reifyNode:node_modules/supports-preserve-symlinks-flag Completed in 1474ms
+199 timing reifyNode:node_modules/node-releases Completed in 1474ms
+200 timing reifyNode:node_modules/fbemitter Completed in 1474ms
+201 timing reifyNode:node_modules/@protobufjs/float Completed in 1474ms
+202 timing reifyNode:node_modules/@jridgewell/set-array Completed in 1475ms
+203 timing reifyNode:node_modules/terser/node_modules/commander Completed in 1483ms
+204 timing reifyNode:node_modules/whatwg-url Completed in 1487ms
+205 timing reifyNode:node_modules/ua-is-frozen Completed in 1485ms
+206 timing reifyNode:node_modules/json-schema-traverse Completed in 1488ms
+207 timing reifyNode:node_modules/is-standalone-pwa Completed in 1486ms
+208 timing reifyNode:node_modules/@webassemblyjs/wasm-parser Completed in 1488ms
+209 timing reifyNode:node_modules/@protobufjs/inquire Completed in 1489ms
+210 timing reifyNode:node_modules/source-map-support Completed in 1499ms
+211 timing reifyNode:node_modules/rfdc Completed in 1501ms
+212 timing reifyNode:node_modules/is-core-module Completed in 1500ms
+213 timing reifyNode:node_modules/hasown Completed in 1500ms
+214 timing reifyNode:node_modules/fast-deep-equal Completed in 1500ms
+215 timing reifyNode:node_modules/@jridgewell/resolve-uri Completed in 1501ms
+216 timing reifyNode:node_modules/detect-europe-js Completed in 1506ms
+217 timing reifyNode:node_modules/envinfo Completed in 1506ms
+218 timing reifyNode:node_modules/browserslist Completed in 1506ms
+219 http fetch GET 401 https://npm.pkg.github.com/download/@awardwallet/extension-v3/3.2.12/07afd72a6b5f416f4d61f693ed3e6dc534fb7bf5 1304ms (cache skip)
+220 http fetch GET 401 https://npm.pkg.github.com/download/@awardwallet/jquery.json-viewer/1.4.0/384ff1b1b524cf8329240563dd8798d9af757677 1316ms (cache skip)
+221 timing reifyNode:node_modules/braces Completed in 1528ms
+222 timing reifyNode:node_modules/watchpack Completed in 1539ms
+223 timing reifyNode:node_modules/es-module-lexer Completed in 1538ms
+224 timing reifyNode:node_modules/@jridgewell/sourcemap-codec Completed in 1537ms
+225 timing reifyNode:node_modules/@babel/helper-validator-identifier Completed in 1537ms
+226 timing reifyNode:node_modules/long Completed in 1545ms
+227 timing reifyNode:node_modules/fastest-levenshtein Completed in 1544ms
+228 timing reifyNode:node_modules/terser-webpack-plugin Completed in 1549ms
+229 http fetch GET 401 https://npm.pkg.github.com/download/@awardwallet/extension-client/1.1.10/d4195baa816588fbc4ed7050fd581e02992b7b42 1328ms (cache skip)
+230 timing reifyNode:node_modules/function-bind Completed in 1550ms
+231 timing reifyNode:node_modules/base64-arraybuffer Completed in 1550ms
+232 timing reifyNode:node_modules/execa Completed in 1550ms
+233 timing reifyNode:node_modules/picomatch Completed in 1551ms
+234 timing reifyNode:node_modules/wildcard Completed in 1565ms
+235 timing reifyNode:node_modules/node-fetch Completed in 1563ms
+236 timing reifyNode:node_modules/mime-db Completed in 1571ms
+237 timing reifyNode:node_modules/fbjs/node_modules/ua-parser-js Completed in 1573ms
+238 timing reifyNode:node_modules/jquery.cookie Completed in 1578ms
+239 timing reifyNode:node_modules/tr46 Completed in 1585ms
+240 timing reifyNode:node_modules/fast-json-stable-stringify Completed in 1583ms
+241 timing reifyNode:node_modules/@jridgewell/gen-mapping Completed in 1582ms
+242 timing reifyNode:node_modules/webextension-polyfill Completed in 1594ms
+243 timing reifyNode:node_modules/eslint-scope Completed in 1593ms
+244 timing reifyNode:node_modules/@xtuc/long Completed in 1601ms
+245 timing reifyNode:node_modules/commander Completed in 1599ms
+246 timing reifyNode:node_modules/cross-fetch Completed in 1613ms
+247 timing reifyNode:node_modules/tslib Completed in 1611ms
+248 timing reifyNode:node_modules/webpack-merge Completed in 1623ms
+249 timing reifyNode:node_modules/@jridgewell/source-map Completed in 1617ms
+250 timing reifyNode:node_modules/@discoveryjs/json-ext Completed in 1620ms
+251 timing reifyNode:node_modules/tapable Completed in 1628ms
+252 http fetch GET 401 https://npm.pkg.github.com/download/@awardwallet/extension-client/1.1.8/c55da6f421b00caa8eac15e893d130ddb4eb494c 1402ms (cache skip)
+253 timing reifyNode:node_modules/webpack-cli Completed in 1650ms
+254 timing reifyNode:node_modules/webpack-cli/node_modules/commander Completed in 1650ms
+255 timing reifyNode:node_modules/electron-to-chromium Completed in 1660ms
+256 timing reifyNode:node_modules/@jridgewell/trace-mapping Completed in 1661ms
+257 timing reifyNode:node_modules/lint-staged Completed in 1661ms
+258 timing reifyNode:node_modules/schema-utils Completed in 1671ms
+259 timing reifyNode:node_modules/@types/eslint Completed in 1669ms
+260 timing reifyNode:node_modules/webpack-sources Completed in 1691ms
+261 timing reifyNode:node_modules/ts-loader/node_modules/source-map Completed in 1702ms
+262 timing reifyNode:node_modules/jest-worker Completed in 1701ms
+263 timing reifyNode:node_modules/events Completed in 1701ms
+264 timing reifyNode:node_modules/undici-types Completed in 1711ms
+265 timing reifyNode:node_modules/ajv-keywords Completed in 1707ms
+266 timing reifyNode:node_modules/@webassemblyjs/ast Completed in 1721ms
+267 timing reifyNode:node_modules/text-segmentation Completed in 1729ms
+268 timing reifyNode:node_modules/acorn Completed in 1727ms
+269 timing reifyNode:node_modules/cosmiconfig Completed in 1751ms
+270 timing reifyNode:node_modules/utrie Completed in 1761ms
+271 timing reifyNode:node_modules/promise Completed in 1774ms
+272 timing reifyNode:node_modules/semver Completed in 1790ms
+273 timing reifyNode:node_modules/css-line-break Completed in 1798ms
+274 timing reifyNode:node_modules/enhanced-resolve Completed in 1800ms
+275 timing reifyNode:node_modules/enquirer Completed in 1796ms
+276 timing reifyNode:node_modules/source-map Completed in 1827ms
+277 timing reifyNode:node_modules/ts-loader Completed in 1837ms
+278 timing reifyNode:node_modules/requirejs Completed in 1852ms
+279 timing reifyNode:node_modules/uri-js Completed in 1858ms
+280 timing reifyNode:node_modules/listr2 Completed in 1872ms
+281 timing reifyNode:node_modules/neo-async Completed in 1957ms
+282 timing reifyNode:node_modules/centrifuge Completed in 1984ms
+283 timing reifyNode:node_modules/ajv Completed in 2028ms
+284 timing reifyNode:node_modules/terser Completed in 2047ms
+285 timing reifyNode:node_modules/resolve Completed in 2137ms
+286 timing reifyNode:node_modules/protobufjs Completed in 2266ms
+287 http fetch GET 200 https://codeload.github.com/components/jqueryui/tar.gz/4c0bac635cc97c8cd5087bb244d497100429fea2 970ms (cache revalidated)
+288 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 2337ms
+289 timing auditReport:getReport Completed in 2342ms
+290 silly audit report {
+290 silly audit report   'cross-spawn': [
+290 silly audit report     {
+290 silly audit report       id: 1100563,
+290 silly audit report       url: 'https://github.com/advisories/GHSA-3xgq-45jj-v275',
+290 silly audit report       title: 'Regular Expression Denial of Service (ReDoS) in cross-spawn',
+290 silly audit report       severity: 'high',
+290 silly audit report       vulnerable_versions: '>=7.0.0 <7.0.5',
+290 silly audit report       cwe: [Array],
+290 silly audit report       cvss: [Object]
+290 silly audit report     }
+290 silly audit report   ],
+290 silly audit report   jquery: [
+290 silly audit report     {
+290 silly audit report       id: 1102093,
+290 silly audit report       url: 'https://github.com/advisories/GHSA-jpcq-cgw6-v4j6',
+290 silly audit report       title: 'Potential XSS vulnerability in jQuery',
+290 silly audit report       severity: 'moderate',
+290 silly audit report       vulnerable_versions: '>=1.0.3 <3.5.0',
+290 silly audit report       cwe: [Array],
+290 silly audit report       cvss: [Object]
+290 silly audit report     },
+290 silly audit report     {
+290 silly audit report       id: 1102100,
+290 silly audit report       url: 'https://github.com/advisories/GHSA-gxr4-xjj5-5px2',
+290 silly audit report       title: 'Potential XSS vulnerability in jQuery',
+290 silly audit report       severity: 'moderate',
+290 silly audit report       vulnerable_versions: '>=1.2.0 <3.5.0',
+290 silly audit report       cwe: [Array],
+290 silly audit report       cvss: [Object]
+290 silly audit report     },
+290 silly audit report     {
+290 silly audit report       id: 1100396,
+290 silly audit report       url: 'https://github.com/advisories/GHSA-6c3j-c64m-qhgq',
+290 silly audit report       title: 'XSS in jQuery as used in Drupal, Backdrop CMS, and other products',
+290 silly audit report       severity: 'moderate',
+290 silly audit report       vulnerable_versions: '>=1.1.4 <3.4.0',
+290 silly audit report       cwe: [Array],
+290 silly audit report       cvss: [Object]
+290 silly audit report     },
+290 silly audit report     {
+290 silly audit report       id: 1094144,
+290 silly audit report       url: 'https://github.com/advisories/GHSA-rmxg-73gg-4p98',
+290 silly audit report       title: 'Cross-Site Scripting (XSS) in jquery',
+290 silly audit report       severity: 'moderate',
+290 silly audit report       vulnerable_versions: '<1.12.2',
+290 silly audit report       cwe: [Array],
+290 silly audit report       cvss: [Object]
+290 silly audit report     }
+290 silly audit report   ],
+290 silly audit report   'jquery-ui': [
+290 silly audit report     {
+290 silly audit report       id: 1100272,
+290 silly audit report       url: 'https://github.com/advisories/GHSA-h6gj-6jjq-h8g9',
+290 silly audit report       title: 'jQuery UI vulnerable to XSS when refreshing a checkboxradio with an HTML-like initial text label',
+290 silly audit report       severity: 'moderate',
+290 silly audit report       vulnerable_versions: '<1.13.2',
+290 silly audit report       cwe: [Array],
+290 silly audit report       cvss: [Object]
+290 silly audit report     },
+290 silly audit report     {
+290 silly audit report       id: 1094161,
+290 silly audit report       url: 'https://github.com/advisories/GHSA-hpcf-8vf9-q4gj',
+290 silly audit report       title: 'jQuery-UI vulnerable to Cross-site Scripting in dialog closeText',
+290 silly audit report       severity: 'moderate',
+290 silly audit report       vulnerable_versions: '<1.12.0',
+290 silly audit report       cwe: [Array],
+290 silly audit report       cvss: [Object]
+290 silly audit report     },
+290 silly audit report     {
+290 silly audit report       id: 1094165,
+290 silly audit report       url: 'https://github.com/advisories/GHSA-j7qv-pgf6-hvh4',
+290 silly audit report       title: 'XSS in `*Text` options of the Datepicker widget in jquery-ui',
+290 silly audit report       severity: 'moderate',
+290 silly audit report       vulnerable_versions: '<1.13.0',
+290 silly audit report       cwe: [Array],
+290 silly audit report       cvss: [Object]
+290 silly audit report     },
+290 silly audit report     {
+290 silly audit report       id: 1094173,
+290 silly audit report       url: 'https://github.com/advisories/GHSA-9gj3-hwp5-pmwc',
+290 silly audit report       title: 'XSS in the `altField` option of the Datepicker widget in jquery-ui',
+290 silly audit report       severity: 'moderate',
+290 silly audit report       vulnerable_versions: '<1.13.0',
+290 silly audit report       cwe: [Array],
+290 silly audit report       cvss: [Object]
+290 silly audit report     },
+290 silly audit report     {
+290 silly audit report       id: 1094249,
+290 silly audit report       url: 'https://github.com/advisories/GHSA-gpqq-952q-5327',
+290 silly audit report       title: 'XSS in the `of` option of the `.position()` util in jquery-ui',
+290 silly audit report       severity: 'moderate',
+290 silly audit report       vulnerable_versions: '<1.13.0',
+290 silly audit report       cwe: [Array],
+290 silly audit report       cvss: [Object]
+290 silly audit report     }
+290 silly audit report   ],
+290 silly audit report   requirejs: [
+290 silly audit report     {
+290 silly audit report       id: 1098385,
+290 silly audit report       url: 'https://github.com/advisories/GHSA-x3m3-4wpv-5vgc',
+290 silly audit report       title: 'jrburke requirejs vulnerable to prototype pollution',
+290 silly audit report       severity: 'high',
+290 silly audit report       vulnerable_versions: '<=2.3.6',
+290 silly audit report       cwe: [Array],
+290 silly audit report       cvss: [Object]
+290 silly audit report     }
+290 silly audit report   ],
+290 silly audit report   webpack: [
+290 silly audit report     {
+290 silly audit report       id: 1099351,
+290 silly audit report       url: 'https://github.com/advisories/GHSA-4vvj-4cpr-p986',
+290 silly audit report       title: "Webpack's AutoPublicPathRuntimeModule has a DOM Clobbering Gadget that leads to XSS",
+290 silly audit report       severity: 'moderate',
+290 silly audit report       vulnerable_versions: '>=5.0.0-alpha.0 <5.94.0',
+290 silly audit report       cwe: [Array],
+290 silly audit report       cvss: [Object]
+290 silly audit report     }
+290 silly audit report   ]
+290 silly audit report }
+291 timing metavuln:cache:get:security-advisory:jquery:dLPrax80y9EWVcU/CnjzDoE7Vdxv4qbTx7LwxsHwWN1wODkMaQJNbbClIU61nCR1a+prWvgR2PmdNA/oMZkMSw== Completed in 41ms
+292 timing metavuln:cache:get:security-advisory:jquery-ui:xYGLlLhQ01eFvFvn9Q4asTmrxKsP4up1adBNz33y6k6Tf2jgWChBd1M8xIH4k7Sf9f29wboMfZez2yy9gyp1yw== Completed in 39ms
+293 timing metavuln:cache:get:security-advisory:jquery:Pg0Jn+slkVkPSLM/B+XDhUPjBcOmY8aReCkMohhdTwx+nCMTVyJ+oNI4U0DfqZQ7F7c/ac9cizQSUvSTvUZsUw== Completed in 40ms
+294 timing metavuln:cache:get:security-advisory:cross-spawn:2YT36nzxyB20FxTbDCbmrt4++gNqyx6OjFmz5po0z6HX9I+GfNPl9tfHVAnBU+aOPgtVA6OYK9Y+H8+bL6aB6g== Completed in 46ms
+295 timing metavuln:cache:get:security-advisory:jquery-ui:KlMlI6EdJHbyTuV7B2+B948rYI4TNdlSPHWqxQQsGkOe7IakpQ1zi/fzY0qN7cSIvBA7suD1im37T9s80u4w1A== Completed in 40ms
+296 timing metavuln:cache:get:security-advisory:jquery:Vy08c17Cm6iL4SQiDKbv/E8U03cRuadzYzvZHVXsDqV/Rh1pI2tdK/27Ms+FE8EUT2lOP+o+v+WZpmkrHxGj0Q== Completed in 40ms
+297 timing metavuln:cache:get:security-advisory:jquery:okMD36+t1pON0QY11JI212be1CyrN90c4DzFpdpgVchDII2WgdHMYq8t8VRSz+r+oIn+TBiP/22M23dSD3bmGQ== Completed in 41ms
+298 timing metavuln:cache:get:security-advisory:jquery-ui:a81EJO+hCdEGFYvdUEvdWj0CflisPXcujfFL50rGlANW9lZkV023JVOLKKGPC3628A/CtMB5c1i3K4xlVAXdzg== Completed in 40ms
+299 timing metavuln:cache:get:security-advisory:jquery-ui:MiyyE5On5pXm5xLbKTRgSBhuwzq/wVcn5KrZ+nRZNEpGPq2f7G1EOqF1jImlxEu5PcUhYPnK4uqSvHAgZfHhJw== Completed in 40ms
+300 timing metavuln:cache:get:security-advisory:requirejs:39aQTroOfvtjhQWXVIlQaxOD+28XA+nNz4ti81NfrTcKCXTxLFawr2syrUBGx61899r6eGhtn/vivMN8yzDzIQ== Completed in 40ms
+301 timing metavuln:cache:get:security-advisory:jquery-ui:epIHehuIj/LiX5w5Xz0bbf48TciR+erdLZ/jdmobmle+23suxa/skbwBb/OHZPWj0A1sA7kz+i5r3J7BghX0jg== Completed in 40ms
+302 timing metavuln:cache:get:security-advisory:webpack:7Pl1j4sHKhCQAEccTmt3XZIEEazRzvyC0TOx07N0G7o5OIhhZ0j0Ji3KSCbTwfmCR/2OHJ3Mx5ZmedDQEQeBbg== Completed in 40ms
+303 http fetch GET 200 https://registry.npmjs.org/jquery-ui 92ms (cache hit)
+304 timing metavuln:packument:jquery-ui Completed in 93ms
+305 timing metavuln:load:security-advisory:jquery-ui:1100272 Completed in 3ms
+306 timing metavuln:calculate:security-advisory:jquery-ui:1100272 Completed in 96ms
+307 timing metavuln:load:security-advisory:jquery-ui:1094161 Completed in 0ms
+308 timing metavuln:calculate:security-advisory:jquery-ui:1094161 Completed in 95ms
+309 timing metavuln:load:security-advisory:jquery-ui:1094165 Completed in 0ms
+310 timing metavuln:calculate:security-advisory:jquery-ui:1094165 Completed in 96ms
+311 timing metavuln:load:security-advisory:jquery-ui:1094173 Completed in 0ms
+312 timing metavuln:calculate:security-advisory:jquery-ui:1094173 Completed in 96ms
+313 timing metavuln:load:security-advisory:jquery-ui:1094249 Completed in 1ms
+314 timing metavuln:calculate:security-advisory:jquery-ui:1094249 Completed in 97ms
+315 http fetch GET 200 https://registry.npmjs.org/jquery 99ms (cache hit)
+316 timing metavuln:packument:jquery Completed in 101ms
+317 timing metavuln:load:security-advisory:jquery:1102093 Completed in 0ms
+318 timing metavuln:calculate:security-advisory:jquery:1102093 Completed in 101ms
+319 timing metavuln:load:security-advisory:jquery:1102100 Completed in 1ms
+320 timing metavuln:calculate:security-advisory:jquery:1102100 Completed in 101ms
+321 timing metavuln:load:security-advisory:jquery:1100396 Completed in 0ms
+322 timing metavuln:calculate:security-advisory:jquery:1100396 Completed in 101ms
+323 timing metavuln:load:security-advisory:jquery:1094144 Completed in 0ms
+324 timing metavuln:calculate:security-advisory:jquery:1094144 Completed in 102ms
+325 http fetch GET 200 https://registry.npmjs.org/requirejs 102ms (cache hit)
+326 timing metavuln:packument:requirejs Completed in 102ms
+327 timing metavuln:load:security-advisory:requirejs:1098385 Completed in 1ms
+328 timing metavuln:calculate:security-advisory:requirejs:1098385 Completed in 104ms
+329 http fetch GET 200 https://registry.npmjs.org/cross-spawn 106ms (cache hit)
+330 timing metavuln:packument:cross-spawn Completed in 112ms
+331 timing metavuln:load:security-advisory:cross-spawn:1100563 Completed in 0ms
+332 timing metavuln:calculate:security-advisory:cross-spawn:1100563 Completed in 113ms
+333 timing reifyNode:node_modules/fbjs Completed in 2440ms
+334 http fetch GET 200 https://registry.npmjs.org/webpack 109ms (cache hit)
+335 timing metavuln:packument:webpack Completed in 123ms
+336 timing metavuln:load:security-advisory:webpack:1099351 Completed in 4ms
+337 timing metavuln:calculate:security-advisory:webpack:1099351 Completed in 127ms
+338 timing metavuln:cache:get:security-advisory:execa:esx5OopxXhaaN4OWrpL/hbUGhclQpXEEYrKiKLVqs1BBwmkO4Yl3bpU/OidAapIpfGn0uCXoaDXI/Cyc2YFujw== Completed in 26ms
+339 timing metavuln:cache:get:security-advisory:webpack-cli:5g8O7zA7ydlbcr0oS08mlVwBTmVVZHeeYWSTIteUcxhUF9SdE7ibHhxGSx4w29WwjdYl01EmG/SV8NN1XFvxSQ== Completed in 25ms
+340 http fetch GET 200 https://registry.npmjs.org/webpack-cli 49ms (cache hit)
+341 timing metavuln:packument:webpack-cli Completed in 52ms
+342 timing metavuln:load:security-advisory:webpack-cli:2YT36nzxyB20FxTbDCbmrt4++gNqyx6OjFmz5po0z6HX9I+GfNPl9tfHVAnBU+aOPgtVA6OYK9Y+H8+bL6aB6g== Completed in 1ms
+343 timing metavuln:calculate:security-advisory:webpack-cli:2YT36nzxyB20FxTbDCbmrt4++gNqyx6OjFmz5po0z6HX9I+GfNPl9tfHVAnBU+aOPgtVA6OYK9Y+H8+bL6aB6g== Completed in 54ms
+344 http fetch GET 200 https://registry.npmjs.org/execa 60ms (cache hit)
+345 timing metavuln:packument:execa Completed in 62ms
+346 timing metavuln:load:security-advisory:execa:2YT36nzxyB20FxTbDCbmrt4++gNqyx6OjFmz5po0z6HX9I+GfNPl9tfHVAnBU+aOPgtVA6OYK9Y+H8+bL6aB6g== Completed in 1ms
+347 timing metavuln:calculate:security-advisory:execa:2YT36nzxyB20FxTbDCbmrt4++gNqyx6OjFmz5po0z6HX9I+GfNPl9tfHVAnBU+aOPgtVA6OYK9Y+H8+bL6aB6g== Completed in 64ms
+348 timing metavuln:cache:get:security-advisory:@webpack-cli/configtest:xJhV3uPYmo74/zKXapV5krAbV3jWwvzos7D9yiHFHhAFDdXd/bP334EYGTBUlwUcuQPEmo50fojjVCVisGGFIQ== Completed in 27ms
+349 timing metavuln:cache:get:security-advisory:ts-loader:brr+M5lvXITLrZ5KTmfzo3z7Mfvmrtq8WrLsdiuE6RVsHM1R/7QOocyFjATSwpZGuVdAkS/vVT5jibIKUdeMjQ== Completed in 24ms
+350 timing metavuln:cache:get:security-advisory:webpack-cli:/nnF4DWRRr5vREfp1So3+1tEViG8gp4FBG0iYaE4bKt+dEZRXeEKKSDD3uVBMFoyh5qBVBar0v6Sv8NQcTMkcA== Completed in 24ms
+351 timing metavuln:load:security-advisory:webpack-cli:7Pl1j4sHKhCQAEccTmt3XZIEEazRzvyC0TOx07N0G7o5OIhhZ0j0Ji3KSCbTwfmCR/2OHJ3Mx5ZmedDQEQeBbg== Completed in 2ms
+352 timing metavuln:calculate:security-advisory:webpack-cli:7Pl1j4sHKhCQAEccTmt3XZIEEazRzvyC0TOx07N0G7o5OIhhZ0j0Ji3KSCbTwfmCR/2OHJ3Mx5ZmedDQEQeBbg== Completed in 26ms
+353 timing metavuln:cache:get:security-advisory:@webpack-cli/serve:fOyrNylPz99fE3Lla0ntgCjm/7k0AedMNaEEspLkGlCLFEmj9XWgjSMsf7Jnz1G4y1yMMhQmw433ie0EvLkTPw== Completed in 32ms
+354 timing metavuln:cache:get:security-advisory:@webpack-cli/info:Ldtj472hf5yVCFXWsCwuB1kYR/mOSU68pxu8Lo8I1VLIXnfbxEu4ID4H4siglwwDlm/yM7UP0N+CO2B9e7S71g== Completed in 34ms
+355 timing metavuln:cache:get:security-advisory:terser-webpack-plugin:Uqotlq7e4p8a17Gch+uSLMmyilwazp3SdS5LgtQM1QyqzBW7FWPwyk3i/l7U7L2H764aPM6RPHDhd/ECqCZEZA== Completed in 32ms
+356 timing reifyNode:node_modules/jquery Completed in 2586ms
+357 http fetch GET 200 https://registry.npmjs.org/@webpack-cli%2finfo 64ms (cache hit)
+358 timing metavuln:packument:@webpack-cli/info Completed in 64ms
+359 timing metavuln:load:security-advisory:@webpack-cli/info:7Pl1j4sHKhCQAEccTmt3XZIEEazRzvyC0TOx07N0G7o5OIhhZ0j0Ji3KSCbTwfmCR/2OHJ3Mx5ZmedDQEQeBbg== Completed in 0ms
+360 timing metavuln:calculate:security-advisory:@webpack-cli/info:7Pl1j4sHKhCQAEccTmt3XZIEEazRzvyC0TOx07N0G7o5OIhhZ0j0Ji3KSCbTwfmCR/2OHJ3Mx5ZmedDQEQeBbg== Completed in 65ms
+361 http fetch GET 200 https://registry.npmjs.org/@webpack-cli%2fconfigtest 67ms (cache hit)
+362 timing metavuln:packument:@webpack-cli/configtest Completed in 67ms
+363 timing metavuln:load:security-advisory:@webpack-cli/configtest:7Pl1j4sHKhCQAEccTmt3XZIEEazRzvyC0TOx07N0G7o5OIhhZ0j0Ji3KSCbTwfmCR/2OHJ3Mx5ZmedDQEQeBbg== Completed in 0ms
+364 timing metavuln:calculate:security-advisory:@webpack-cli/configtest:7Pl1j4sHKhCQAEccTmt3XZIEEazRzvyC0TOx07N0G7o5OIhhZ0j0Ji3KSCbTwfmCR/2OHJ3Mx5ZmedDQEQeBbg== Completed in 68ms
+365 http fetch GET 200 https://registry.npmjs.org/@webpack-cli%2fserve 66ms (cache hit)
+366 timing metavuln:packument:@webpack-cli/serve Completed in 66ms
+367 timing metavuln:load:security-advisory:@webpack-cli/serve:7Pl1j4sHKhCQAEccTmt3XZIEEazRzvyC0TOx07N0G7o5OIhhZ0j0Ji3KSCbTwfmCR/2OHJ3Mx5ZmedDQEQeBbg== Completed in 1ms
+368 timing metavuln:calculate:security-advisory:@webpack-cli/serve:7Pl1j4sHKhCQAEccTmt3XZIEEazRzvyC0TOx07N0G7o5OIhhZ0j0Ji3KSCbTwfmCR/2OHJ3Mx5ZmedDQEQeBbg== Completed in 67ms
+369 http fetch GET 200 https://registry.npmjs.org/ts-loader 66ms (cache hit)
+370 timing metavuln:packument:ts-loader Completed in 68ms
+371 timing metavuln:load:security-advisory:ts-loader:7Pl1j4sHKhCQAEccTmt3XZIEEazRzvyC0TOx07N0G7o5OIhhZ0j0Ji3KSCbTwfmCR/2OHJ3Mx5ZmedDQEQeBbg== Completed in 0ms
+372 timing metavuln:calculate:security-advisory:ts-loader:7Pl1j4sHKhCQAEccTmt3XZIEEazRzvyC0TOx07N0G7o5OIhhZ0j0Ji3KSCbTwfmCR/2OHJ3Mx5ZmedDQEQeBbg== Completed in 69ms
+373 http fetch GET 200 https://registry.npmjs.org/terser-webpack-plugin 74ms (cache hit)
+374 timing metavuln:packument:terser-webpack-plugin Completed in 76ms
+375 timing metavuln:load:security-advisory:terser-webpack-plugin:7Pl1j4sHKhCQAEccTmt3XZIEEazRzvyC0TOx07N0G7o5OIhhZ0j0Ji3KSCbTwfmCR/2OHJ3Mx5ZmedDQEQeBbg== Completed in 0ms
+376 timing metavuln:calculate:security-advisory:terser-webpack-plugin:7Pl1j4sHKhCQAEccTmt3XZIEEazRzvyC0TOx07N0G7o5OIhhZ0j0Ji3KSCbTwfmCR/2OHJ3Mx5ZmedDQEQeBbg== Completed in 76ms
+377 timing auditReport:init Completed in 294ms
+378 timing reify:audit Completed in 2641ms
+379 timing reifyNode:node_modules/ua-parser-js Completed in 2633ms
+380 timing reifyNode:node_modules/@types/node Completed in 2696ms
+381 timing reifyNode:node_modules/html2canvas Completed in 3014ms
+382 timing reifyNode:node_modules/caniuse-lite Completed in 3214ms
+383 timing reifyNode:node_modules/webpack Completed in 3260ms
+384 timing reifyNode:node_modules/typescript Completed in 4103ms
+385 timing reifyNode:node_modules/rxjs Completed in 4423ms
+386 timing reifyNode:node_modules/jquery-ui Completed in 4595ms
+387 timing reify:rollback:createSparse Completed in 2353ms
+388 timing reify:rollback:retireShallow Completed in 21ms
+389 timing command:i Completed in 7568ms
+390 verbose stack HttpErrorGeneral: 401 Unauthorized - GET https://npm.pkg.github.com/download/@awardwallet/jquery.json-viewer/1.4.0/384ff1b1b524cf8329240563dd8798d9af757677 - authentication token not provided
+390 verbose stack     at /usr/local/lib/nodejs/node-v16.17.0-linux-x64/lib/node_modules/npm/node_modules/npm-registry-fetch/lib/check-response.js:93:15
+390 verbose stack     at processTicksAndRejections (node:internal/process/task_queues:96:5)
+391 verbose statusCode 401
+392 verbose pkgid @awardwallet/jquery.json-viewer@https://npm.pkg.github.com/download/@awardwallet/jquery.json-viewer/1.4.0/384ff1b1b524cf8329240563dd8798d9af757677
+393 verbose cwd /www/awardwallet
+394 verbose Linux 6.12.5-linuxkit
+395 verbose node v16.17.0
+396 verbose npm  v8.15.0
+397 error code E401
+398 error 401 Unauthorized - GET https://npm.pkg.github.com/download/@awardwallet/jquery.json-viewer/1.4.0/384ff1b1b524cf8329240563dd8798d9af757677 - authentication token not provided
+399 verbose exit 1
+400 timing npm Completed in 7737ms
+401 verbose unfinished npm timer reify 1742193861884
+402 verbose unfinished npm timer reify:unpack 1742193862471
+403 verbose unfinished npm timer reifyNode:node_modules/@awardwallet/jquery.json-viewer 1742193862481
+404 verbose unfinished npm timer reifyNode:node_modules/@awardwallet/extension-v3 1742193862481
+405 verbose unfinished npm timer reifyNode:node_modules/@awardwallet/extension-v3/node_modules/@awardwallet/extension-client 1742193862481
+406 verbose unfinished npm timer reifyNode:node_modules/@awardwallet/extension-client 1742193862481
+407 verbose code 1
+408 error A complete log of this run can be found in:
+408 error     /home/user/.npm/_logs/2025-03-17T06_44_21_718Z-debug-0.log

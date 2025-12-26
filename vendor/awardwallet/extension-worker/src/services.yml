@@ -1,0 +1,28 @@
+services:
+  _defaults:
+    autowire: true
+    bind:
+      $centrifuge: '@aw.extension-worker.centrifuge'
+      $rabbitConnection: '@old_sound_rabbit_mq.connection.default'
+      $proxyProviders: !tagged 'aw.proxy_provider'
+
+  AwardWallet\ExtensionWorker\ParserRunner:
+  AwardWallet\ExtensionWorker\ParserFactory:
+  AwardWallet\ExtensionWorker\ServerConfigFactory:
+  AwardWallet\ExtensionWorker\ServerCheckOptionsFactory:
+  AwardWallet\ExtensionWorker\ProviderInfoFactory:
+  AwardWallet\ExtensionWorker\ClientFactory:
+  AwardWallet\ExtensionWorker\SessionManager:
+  AwardWallet\ExtensionWorker\ResponseReceiver:
+  AwardWallet\ExtensionWorker\RabbitQueue:
+  AwardWallet\ExtensionWorker\SeleniumSessionManager:
+    autowire: true
+    arguments:
+      $centrifugeUrl: '%env(EXTENSION_WORKER_CENTRIFUGE_SERVER_API_URL)%'
+  aw.extension-worker.centrifuge:
+    class: phpcent\Client
+    autowire: true
+    arguments:
+      $url: '%env(EXTENSION_WORKER_CENTRIFUGE_SERVER_API_URL)%'
+      $apikey: '%env(EXTENSION_WORKER_CENTRIFUGE_API_KEY)%'
+      $secret: '%env(EXTENSION_WORKER_CENTRIFUGE_SECRET)%'

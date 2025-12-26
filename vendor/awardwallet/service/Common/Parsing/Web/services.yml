@@ -1,0 +1,107 @@
+parameters:
+  env(LPM_HOST): 'lpm.infra.awardwallet.com'
+  env(WRAPPED_PROXY_INTERNAL_HOST): 'wrapped-proxy.infra.awardwallet.com:3000'
+  env(WRAPPED_PROXY_EXTERNAL_HOST): 'wrapped-proxy.awardwallet.com'
+  # cache server address for LuminatiProxyManager
+  env(CACHE_SERVER_HOST): 'localhost' # usually cache server runs on same instance as lpm
+  env(MITM_PROXY_CACHE_SERVER): 'localhost:3128' # usually cache server runs on same instance as mitm-proxy
+  env(MITM_PROXY_API_URL): 'http://lpm.infra.awardwallet.com:42299/api'
+
+services:
+  _defaults:
+    bind:
+      $seleniumConnector: '@aw.selenium_connector'
+      $curlDriver: '@aw.curl_driver'
+
+  AwardWallet\Common\Selenium\FingerprintFactory:
+    autowire: true
+  AwardWallet\Common\Selenium\SeleniumDriverFactory:
+    autowire: true
+  AwardWallet\Common\Selenium\HotPoolManager:
+    autowire: true
+  AwardWallet\Common\Selenium\HotSession\NullHotPoolManager:
+    public: true
+    autowire: true
+  AwardWallet\Common\Selenium\HotSession\HotPoolManagerInterface: '@AwardWallet\Common\Selenium\HotSession\NullHotPoolManager'
+  AwardWallet\Common\Selenium\HotSession\KeepHotConfigFactory:
+    autowire: true
+    arguments:
+      $parseMode: "@=container.hasParameter('ra_parse_mode') ? parameter('ra_parse_mode') : null"
+  AwardWallet\Common\Parsing\ProxyChecker:
+    autowire: true
+    arguments:
+      $driver: '@aw.curl_driver'
+  AwardWallet\Common\Parsing\MailslurpApiControllersCustom:
+    autowire: true
+  AwardWallet\Common\Parsing\LuminatiProxyManager\Api:
+    autowire: true
+    arguments:
+      $host: '%env(LPM_HOST)%'
+  AwardWallet\Common\Parsing\LuminatiProxyManager\Client:
+    autowire: true
+    arguments:
+      $cacheServerHost: '%env(CACHE_SERVER_HOST)%'
+  AwardWallet\Common\Parsing\MitmProxy\Client:
+    autowire: true
+    arguments:
+      $cacheServer: '%env(MITM_PROXY_CACHE_SERVER)%'
+      $apiUrl: '%env(MITM_PROXY_API_URL)%'
+  AwardWallet\Common\Parsing\WrappedProxyClient:
+    autowire: true
+    arguments:
+      $internalHost: '%env(WRAPPED_PROXY_INTERNAL_HOST)%'
+      $externalHost: '%env(WRAPPED_PROXY_EXTERNAL_HOST)%'
+  AwardWallet\Common\Parsing\JsExecutor:
+    autowire: true
+  aw.parsing.web.service_locator:
+    public: true
+    class: Symfony\Component\DependencyInjection\ServiceLocator
+    tags: ['container.service_locator']
+    arguments:
+      -
+        AwardWallet\Common\Selenium\FingerprintFactory: '@AwardWallet\Common\Selenium\FingerprintFactory'
+        AwardWallet\Common\Selenium\SeleniumDriverFactory: '@AwardWallet\Common\Selenium\SeleniumDriverFactory'
+        AwardWallet\Common\Parsing\ProxyChecker: '@AwardWallet\Common\Parsing\ProxyChecker'
+        AwardWallet\Common\Parsing\MailslurpApiControllersCustom: '@AwardWallet\Common\Parsing\MailslurpApiControllersCustom'
+        AwardWallet\Common\Parsing\LuminatiProxyManager\Client: '@AwardWallet\Common\Parsing\LuminatiProxyManager\Client'
+        AwardWallet\Common\Parsing\MitmProxy\Client: '@AwardWallet\Common\Parsing\MitmProxy\Client'
+        AwardWallet\Common\Parsing\WrappedProxyClient: '@AwardWallet\Common\Parsing\WrappedProxyClient'
+        AwardWallet\Common\Parsing\JsExecutor: '@AwardWallet\Common\Parsing\JsExecutor'
+        AwardWallet\Common\Parsing\Web\GoProxiesSubuserManager: '@AwardWallet\Common\Parsing\Web\GoProxiesSubuserManager'
+  AwardWallet\Common\Parsing\Web\Captcha\RucaptchaProvider:
+    autowire: true
+    arguments:
+      $rucaptchaApiKey: '%rucaptcha_api_key%'
+    tags:
+      - { name: 'aw.captcha_provider' }
+
+  # proxy providers
+  AwardWallet\Common\Parsing\Web\Proxy\Provider\GoProxies:
+    autowire: true
+    arguments:
+      $username: "@=container.hasParameter('goproxies_username') ? parameter('goproxies_username') : 'goproxies_username_not_set'"
+      $password: "@=container.hasParameter('goproxies_password') ? parameter('goproxies_password') : 'goproxies_password_not_set'"
+    tags:
+      - { name: 'aw.proxy_provider' }
+  AwardWallet\Common\Parsing\Web\Proxy\Provider\NetNut:
+    autowire: true
+    arguments:
+      $username: "@=container.hasParameter('netnut_username') ? parameter('netnut_username') : 'netnut_username_not_set'"
+      $password: "@=container.hasParameter('netnut_password') ? parameter('netnut_password') : 'netnut_password_not_set'"
+    tags:
+      - { name: 'aw.proxy_provider' }
+  AwardWallet\Common\Parsing\Web\Proxy\Provider\Mount:
+    autowire: true
+    arguments:
+      $username: "@=container.hasParameter('mount_username') ? parameter('mount_username') : 'mount_username_not_set'"
+      $password: "@=container.hasParameter('mount_password') ? parameter('mount_password') : 'mount_password_not_set'"
+    tags:
+      - { name: 'aw.proxy_provider' }
+  AwardWallet\Common\Parsing\Web\HAR\ArrayOrStringHandler:
+    tags:
+      - { name: 'jms_serializer.handler', type: "ArrayOrString", direction: "deserialization", format: "json", method: "deserializeArrayOrString" }
+  AwardWallet\Common\Parsing\Web\GoProxiesSubuserManager:
+    autowire: true
+    arguments:
+      $goproxiesRootLogin: "@=container.hasParameter('goproxies_root_username') ? parameter('goproxies_root_username') : ''"
+      $goproxiesRootPassword: "@=container.hasParameter('goproxies_root_password') ? parameter('goproxies_root_password') : ''"
