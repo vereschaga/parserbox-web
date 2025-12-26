@@ -1,0 +1,216 @@
+<?php
+
+namespace AwardWallet\Engine\travelbank\Email;
+
+use AwardWallet\Common\Parser\Util\PriceHelper;
+use AwardWallet\Schema\Parser\Common\Hotel;
+use AwardWallet\Schema\Parser\Email\Email;
+use PlancakeEmailParser;
+
+class HotelCancellation extends \TAccountChecker
+{
+	public $mailFiles = "travelbank/it-762417026.eml";
+    public $subjects = [
+        'Reservation for',
+        'Has Been Canceled'
+    ];
+
+    public $lang = 'en';
+
+    public static $dictionary = [
+        'en' => [
+            'Total' => ['Total Paid:'],
+        ],
+    ];
+
+    public function detectEmailByHeaders(array $headers): bool
+    {
+        if (isset($headers['from']) && stripos($headers['from'], '@travelbank.com') !== false) {
+            foreach ($this->subjects as $subject) {
+                if (stripos($headers['subject'], $subject) !== false) {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+
+    public function detectEmailByBody(PlancakeEmailParser $parser): bool
+    {
+        if ($this->http->XPath->query("//text()[starts-with(normalize-space(), 'TravelBank Itinerary ID:')]")->length > 0
+            && $this->http->XPath->query("//text()[{$this->eq($this->t('Previously Paid'))}]")->length > 0
+            && $this->http->XPath->query("//text()[{$this->eq($this->t('Hotel Name:'))}]")->length > 0
+            && $this->http->XPath->query("//text()[{$this->eq($this->t('Reservation Details'))}]")->length > 0) {
+            return true;
+        }
+
+        return false;
+    }
+
+    public function detectEmailFromProvider($from): bool
+    {
+        return preg_match('/[@.]travelbank\.com$/', $from) > 0;
+    }
+
+    public function ParsePlanEmailExternal(PlancakeEmailParser $parser, Email $email): Email
+    {
+        $this->HotelCancellation($email);
+        $class = explode('\\', __CLASS__);
+        $email->setType(end($class) . ucfirst($this->lang));
+
+        return $email;
+    }
+
+    public function HotelCancellation(Email $email)
+    {
+        $h = $email->add()->hotel();
+
+        $email->ota()
+            ->confirmation($this->http->FindSingleNode("//text()[contains(normalize-space(), 'TravelBank Itinerary ID:')]", null, true, "/^\D+\:\s*([A-Z\d]+)$/"), 'TravelBank Itinerary ID');
+
+        $h->general()
+            ->date(strtotime($this->http->FindSingleNode("//text()[starts-with(normalize-space(), 'Booking Date:')]/ancestor::tr[1]/descendant::td[2]", null, false, "/^(\w+\s*\d+\,\s*\d{4})$/")));
+
+        $hotelConfirmation = $this->http->FindSingleNode("//text()[contains(normalize-space(), 'Hotel Reservation Number:')]", null, true, "/^\D+\:\s*([A-Z\d]+)$/");
+
+        if ($hotelConfirmation == null) {
+            $h->general()
+                ->noConfirmation();
+        } else {
+            $h->general()
+                ->confirmation($hotelConfirmation);
+        }
+
+        $priceInfo = $this->http->FindSingleNode("//text()[{$this->eq($this->t('Total'))}]/ancestor::tr[1]", null, true, "/^\D+\:\s*(\D{1,3}\s*[\d\.\,\`]+)$/");
+
+        if (preg_match("/^(?<currency>\D{1,3})\s*(?<price>[\d\.\,\']+)$/", $priceInfo, $m)) {
+            $h->price()
+                ->total(PriceHelper::parse($m['price'], $m['currency']))
+                ->currency($m['currency']);
+
+            $cost = $this->http->FindSingleNode("//text()[contains(normalize-space(), 'Room Charge')]/ancestor::tr[1]", null, true, "/\s\D{1,3}\s*([\d\.\,\`]+)$/");
+
+            if ($cost !== null) {
+                $h->price()
+                    ->cost(PriceHelper::parse($cost, $m['currency']));
+            }
+
+            $tax = $this->http->FindSingleNode("//text()[normalize-space()='Tax Recovery Charges & Service Fees']/ancestor::tr[1]", null, true, "/\s*\D{1,3}\s*([\d\.\,\`]+)$/");
+
+            if ($tax !== null) {
+                $h->price()
+                    ->tax(PriceHelper::parse($tax, $m['currency']));
+            }
+        }
+
+        $h->addRoom()
+            ->setRate(str_replace(' avg', '', $this->http->FindSingleNode("//text()[contains(normalize-space(), 'Room Charge')]", null, false, "/\D*\s*(\D{1,3}[\d\.\,\`]+(\s*\w*)\/\w*)\)/")))
+            ->setType($this->http->FindSingleNode("//text()[normalize-space()='Room Type:']/ancestor::tr[1]/descendant::td[2]", null, false, "/^.+$/"));
+
+        $travellers = $this->http->FindNodes("//text()[normalize-space()='Traveler(s)']/ancestor::table[1]/following-sibling::table[1]/descendant::tr[not(contains(normalize-space(), 'ending in'))]/descendant::td[1]", null, "/^([[:alpha:]][-.\/\'’[:alpha:] ]*[[:alpha:]])$/");
+        $h->setTravellers(array_unique($travellers), true);
+
+        $h->hotel()
+            ->name($this->http->FindSingleNode("//text()[normalize-space()='Hotel Name:']/ancestor::tr[1]/descendant::td[2]", null, false))
+            ->address($this->http->FindSingleNode("//text()[normalize-space()='Hotel Address:']/ancestor::tr[1]/descendant::td[2]", null, false));
+
+        $checkinInfo = $this->http->FindSingleNode("//text()[normalize-space()='Check-in']/ancestor::tr[1]/descendant::td[2]");
+
+        if (preg_match("/(?<checkinTime>\d+\:\d+\s*(?:[A-a]|[P-p])[M-m])\s*\w+\,\s*(?<checkinDate>\w+\s*\d+\,\s*\d{4})$/", $checkinInfo, $m)) {
+            if (!empty($m['checkinTime'])){
+                $h->booked()
+                    ->checkIn(strtotime($m['checkinTime'] . ' ' . $m['checkinDate']));
+            } else {
+                $h->booked()
+                    ->checkIn(strtotime($m['checkinDate']));
+            }
+        }
+
+        $checkoutInfo = $this->http->FindSingleNode("//text()[normalize-space()='Check-out']/ancestor::tr[1]/descendant::td[2]");
+
+        if (preg_match("/(?<checkoutTime>\d+\:\d+\s*(?:[A-a]|[P-p])[M-m])\s*\w+\,\s*(?<checkoutDate>\w+\s*\d+\,\s*\d{4})$/", $checkoutInfo, $m)) {
+            if (!empty($m['checkoutTime'])){
+                $h->booked()
+                    ->checkOut(strtotime($m['checkoutTime'] . ' ' . $m['checkoutDate']));
+            } else {
+                $h->booked()
+                    ->checkOut(strtotime($m['checkoutDate']));
+            }
+        }
+
+        $cancellation = $this->http->FindSingleNode("//text()[normalize-space()='Total Paid:']/ancestor::tr[1]/following-sibling::tr[1]");
+
+        if ($cancellation !== null) {
+            $h->general()
+                ->cancellation($cancellation);
+        } else {
+            $h->general()
+                ->cancellation($this->http->FindSingleNode("//text()[normalize-space()='Cancelation Policy:']/ancestor::tr[1]/descendant::td[2]"));
+        }
+        $this->detectDeadLine($h);
+
+        $cancellationStatus = $this->http->FindSingleNode("//text()[normalize-space()='Status:']/ancestor::tr[1]/descendant::td[2]");
+
+        if ($cancellationStatus == "Reservation Canceled") {
+            $h->general()
+                ->cancelled();
+        }
+    }
+
+    public static function getEmailLanguages()
+    {
+        return array_keys(self::$dictionary);
+    }
+
+    public static function getEmailTypesCount()
+    {
+        return count(self::$dictionary);
+    }
+
+    private function eq($field)
+    {
+        $field = (array) $field;
+
+        if (count($field) == 0) {
+            return 'false()';
+        }
+
+        return '(' . implode(" or ", array_map(function ($s) {
+                return "normalize-space(.)=\"{$s}\"";
+            }, $field)) . ')';
+    }
+
+    private function t($word)
+    {
+        if (!isset(self::$dictionary[$this->lang]) || !isset(self::$dictionary[$this->lang][$word])) {
+            return $word;
+        }
+
+        return self::$dictionary[$this->lang][$word];
+    }
+
+    private function detectDeadLine(Hotel $h)
+    {
+        if (empty($cancellation = $h->getCancellation())) {
+            return;
+        }
+
+        if (preg_match("/^Free\s*cancelation\s*until\s*(\d+\s*\w+\s*\d{4}\s*[\d\:]+\s*A?P?M?)\s\(/", $cancellation, $m)) {
+            $h->booked()
+                ->deadline(strtotime($m[1]));
+        }
+
+        if (preg_match("/(\d+\s*days?)\s*before\s*arrival$/", $cancellation, $m)) {
+            $h->booked()
+                ->deadlineRelative($m[1]);
+        }
+
+        if (preg_match("/^Non\-refundable/", $cancellation)
+            || preg_match("/^This rate is non\-refundable\./", $cancellation)
+            || preg_match("/is non\-refundable\.$/", $cancellation)) {
+            $h->booked()
+                ->nonRefundable();
+        }
+    }
+}

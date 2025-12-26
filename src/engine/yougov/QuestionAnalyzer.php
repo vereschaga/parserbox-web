@@ -1,0 +1,21 @@
+<?php
+
+namespace AwardWallet\Engine\yougov;
+
+use AwardWallet\Common\OneTimeCode\EmailQuestionAnalyzerInterface;
+
+class QuestionAnalyzer implements EmailQuestionAnalyzerInterface
+{
+    public static function isOtcQuestion(string $question): bool
+    {
+        return
+            str_starts_with($question, "Please copy-paste an authorization link which")
+            || str_starts_with($question, "Please enter the code we sent to")
+        ;
+    }
+
+    public static function getHoldsSession(): bool
+    {
+        return true;
+    }
+}

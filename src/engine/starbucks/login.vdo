@@ -1,0 +1,364 @@
+move 1 158
+pause 13
+move 8 161
+pause 22
+move 15 164
+pause 9
+move 22 168
+pause 18
+move 27 170
+pause 18
+move 32 172
+pause 24
+move 35 174
+pause 9
+move 36 175
+pause 18
+move 38 176
+pause 23
+move 39 177
+pause 10
+move 40 177
+pause 23
+move 40 178
+pause 10
+move 40 179
+pause 246
+move 40 180
+pause 22
+move 41 181
+pause 10
+move 43 183
+pause 19
+move 44 184
+pause 23
+move 45 186
+pause 10
+move 46 187
+pause 18
+move 48 188
+pause 24
+move 50 190
+pause 9
+move 52 191
+pause 19
+move 54 192
+pause 24
+move 57 194
+pause 8
+move 58 196
+pause 22
+move 59 196
+pause 13
+move 60 197
+pause 30
+move 61 197
+pause 13
+move 62 198
+pause 17
+move 63 199
+pause 20
+move 65 200
+pause 23
+move 66 201
+pause 7
+move 68 203
+pause 18
+move 69 204
+pause 23
+move 70 206
+pause 11
+move 73 210
+pause 18
+move 76 215
+pause 23
+move 78 220
+pause 10
+move 80 226
+pause 19
+move 83 232
+pause 15
+move 85 235
+pause 19
+move 86 236
+pause 198
+move 86 238
+pause 18
+move 86 244
+pause 18
+move 86 251
+pause 16
+move 86 259
+pause 16
+move 86 273
+pause 23
+move 86 287
+pause 10
+move 86 295
+pause 19
+move 86 302
+pause 15
+move 87 307
+pause 19
+move 87 308
+pause 24
+move 88 310
+pause 9
+move 88 311
+pause 18
+move 88 312
+pause 22
+move 88 313
+pause 14
+move 89 315
+pause 15
+move 89 318
+pause 23
+move 90 323
+pause 13
+move 90 329
+pause 16
+move 90 333
+pause 22
+move 90 336
+pause 14
+move 90 339
+pause 16
+move 90 342
+pause 23
+move 90 344
+pause 16
+move 91 346
+pause 15
+move 91 348
+pause 15
+move 91 351
+pause 16
+move 91 354
+pause 18
+move 91 357
+pause 22
+move 92 359
+pause 14
+move 92 361
+pause 15
+move 92 363
+pause 21
+move 92 365
+pause 15
+move 92 366
+pause 15
+move 92 367
+pause 22
+move 92 368
+pause 11
+move 92 369
+pause 17
+move 92 370
+pause 20
+move 92 371
+pause 24
+move 92 372
+pause 13
+move 92 373
+pause 21
+move 93 374
+pause 13
+move 93 375
+pause 24
+move 93 376
+pause 20
+move 93 377
+pause 13
+move 93 378
+pause 17
+move 93 379
+pause 19
+move 93 380
+pause 23
+move 93 382
+pause 8
+move 93 383
+pause 18
+move 93 384
+pause 31
+move 93 385
+pause 25
+move 93 386
+pause 36
+move 93 387
+pause 28
+move 93 388
+pause 71
+move 93 389
+pause 72
+move 93 390
+pause 160
+move 93 391
+pause 920
+mousedown 1
+pause 121
+mouseup 1
+pause 38
+pause 695
+pause 1
+[login]
+pause 61
+pause 453
+move 93 393
+pause 15
+move 92 402
+pause 18
+move 90 413
+pause 21
+move 87 427
+pause 15
+move 84 444
+pause 14
+move 82 452
+pause 21
+move 80 459
+pause 15
+move 79 463
+pause 17
+move 79 465
+pause 23
+move 79 468
+pause 10
+move 78 468
+pause 17
+move 77 469
+pause 21
+move 76 471
+pause 13
+move 75 472
+pause 16
+move 74 475
+pause 22
+move 73 477
+pause 23
+move 73 478
+pause 6
+move 72 480
+pause 24
+move 71 480
+pause 26
+move 71 479
+pause 16
+move 71 477
+pause 16
+move 71 475
+pause 21
+move 71 474
+pause 27
+move 71 473
+pause 70
+move 70 473
+pause 24
+move 70 472
+pause 8
+move 70 471
+pause 22
+move 70 470
+pause 36
+mousedown 1
+pause 165
+mouseup 1
+pause 34
+pause 1180
+pause 1
+[password]
+pause 79
+pause 606
+move 70 471
+pause 18
+move 70 474
+pause 16
+move 70 478
+pause 25
+move 71 483
+pause 7
+move 72 489
+pause 20
+move 72 495
+pause 14
+move 73 500
+pause 18
+move 73 508
+pause 21
+move 73 514
+pause 17
+move 74 522
+pause 12
+move 74 531
+pause 20
+move 74 540
+pause 18
+move 74 546
+pause 12
+move 74 553
+pause 21
+move 74 561
+pause 12
+move 74 566
+pause 17
+move 74 571
+pause 21
+move 74 576
+pause 17
+move 74 580
+pause 16
+move 74 584
+pause 34
+move 74 587
+pause 11
+move 74 592
+pause 6
+move 74 596
+pause 16
+move 74 600
+pause 19
+move 74 604
+pause 23
+move 74 607
+pause 9
+move 74 610
+pause 20
+move 75 613
+pause 13
+move 76 616
+pause 18
+move 78 619
+pause 19
+move 80 623
+pause 25
+move 82 626
+pause 8
+move 84 631
+pause 19
+move 86 633
+pause 14
+move 87 635
+pause 16
+move 88 636
+pause 22
+move 88 637
+pause 36
+move 89 638
+pause 47
+move 90 638
+pause 5
+move 90 639
+pause 80
+move 90 640
+pause 36
+move 90 641
+pause 15
+move 91 641
+pause 84
+move 91 642
+pause 802
+mousedown 1
+pause 69
+mouseup 1
+pause 34
